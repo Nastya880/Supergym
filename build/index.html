@@ -31,17 +31,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="wrapper__intro">
+        <header>
+          <div class="header__container container">
+            <a class="header__logo" href="#" aria-label="логотип SUPERGYM">SUPERGYM</a>
+            <a class="header__phone" href="tel:88005555555" aria-label="88005555555">8-800-555-55-55</a>
+          </div>
+        </header>
+
+        <section class="intro">
+          <div class="intro__container container">
+            <div class="intro__description">
+              <ul class="intro__list">
+                <li class="intro__item">Тренажёрный зал</li>
+                <li class="intro__item">Групповые занятия</li>
+                <li class="intro__item">Кардио-зона</li>
+              </ul>
+              <div class="intro__description-wrapper">
+                <p>омск</p>
+                <h1>ФИТНЕС ЦЕНТР</h1>
+              </div>
+              <a class="intro__button button" href="#tickets">купить абонемент</a>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/intro-trainer.webp 1x, img/intro-trainer@2x.webp 2x">
+              <img src="img/intro-trainer.jpg" srcset="img/intro-trainer@2x.jpg 2x" width="500" height="556" alt="фотография тренера">
+            </picture>
+          </div>
+        </section>
+      </div>
+
       <main>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
           </div>
         </section>
       </main>

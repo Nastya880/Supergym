@@ -25,7 +25,6 @@ $color-crimson:                     #d10a42;
 $color-black-russian:               #030a1a;
 
 // Gradient
-
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $blue-to-red-conic:                 conic-gradient(from 151deg at 16.03% 39.06%, $color-dark-cerulean 32.23633825778961deg, $color-venetian-red 313.3060026168823deg);
 $blue-to-red-linear:                linear-gradient(143deg, $color-crimson 0%, $color-cobalt 87.33%);
@@ -40,7 +39,8 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-
+$ff-alumni-sans:                    "Alumni Sans", "Arial", sans-serif;
+$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 
 // Animation

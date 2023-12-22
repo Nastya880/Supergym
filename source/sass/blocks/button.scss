@@ -1,3 +1,10 @@
+.button {
+  @include font($ff-roboto, 700, 12px, $color-default-white, normal);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .btn {
   display: inline-flex;
   padding: 10px 20px;
