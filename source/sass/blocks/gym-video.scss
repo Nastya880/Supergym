@@ -1,0 +1,99 @@
+.gym__video {
+  position: absolute;
+  // top: 289px;
+  // left: -62px;
+  top: 72%;
+  left: -9.5%;
+  width: 364px;
+  height: 228px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-dark-cerulean, 0.5);
+    z-index: 1;
+  }
+
+  @include vp-1179 {
+    top: 60%;
+  }
+
+  @include vp-1023 {
+    max-width: 267px;
+    height: 167px;
+    top: 75.5%;
+    left: 30.3%;
+    // position: relative;
+  }
+
+  @include vp-767 {
+    width: 100%; //
+    // border: 2px solid red;
+    max-width: none;
+    position: relative;
+    top:  auto;
+    left: auto;
+  }
+}
+
+.gym__video img,
+.gym__video.is-active iframe {
+  height: 228px;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+
+
+  @include vp-1023 {
+    width: 266px;
+    height: 166px;
+  }
+
+  @include vp-767 {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.gym__video iframe {
+  display: none;
+}
+
+.gym__video.is-active {
+  img,
+  button,
+  &::before {
+    display: none;
+  }
+}
+
+.gym__video-button {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 28%;
+  left: 36.2%;
+  border: none;
+  background: transparent;
+  background: url("../img/svg/play.svg") no-repeat center;
+  z-index: 10;
+  cursor: pointer;
+
+  @include vp-1023 {
+    width: 72px;
+    height: 72px;
+    background-size: 100% 100%;
+    top: 28.5%;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    top: 28%;
+    left: 39%;
+  }
+}

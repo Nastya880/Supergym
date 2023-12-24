@@ -1,16 +1,34 @@
 .gym__container {
   padding: 118px 103px 120px 162px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 355px auto;
   column-gap: 85px;
-  position: relative;
 
-  @include vp-1023 {}
-  @include vp-767 {}
+  @include vp-1023 {
+    padding: 100px 45px;
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 70px;
+  }
 }
 
 .gym__description {
   align-self: center;
+
+  @include vp-1023 {
+    text-align: center;
+  }
+
+  @include vp-767 {
+    // display: block;
+    // border: 2px solid red;
+    // max-width: 300px;
+    text-align: left;
+    margin-left: 15px;
+  }
 }
 
 .gym h2 {
@@ -21,11 +39,13 @@
   @include vp-1023 {
     font-size: 42px;
     letter-spacing: 1.26px;
+    margin: 0;
   }
 
   @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
+    // margin-top: -10px;
   }
 }
 
@@ -33,60 +53,60 @@
   @include font($ff-roboto, 400, 18px, $color-sapphire, 150%);
   margin: 0 0 39px;
 
-  @include vp-1023 {}
+  @include vp-1023 {
+    margin-top: -2px;
+    margin-bottom: 35px;
+  }
 
-  @include vp-767 {}
+  @include vp-767 {
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 25px;
+  }
 }
 
 .gym p {
   @include font($ff-roboto, 300, 16px, $color-sapphire, 150%);
   margin: 0 0 8px;
 
-  // &:last-child {
-  //   // color: red;
-  //   margin: 0;
-  // }
-
   @include vp-1023 {
     text-align: center;
+    width: 512px;
+    margin: 0 auto;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    width: 90%;
+    // margin-left: -20px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: -11px;
+  }
+}
+
+.gym p:last-child {
+  @include vp-1023 {
+    display: none;
+  }
 }
 
 .gym__img-wrapper {
   position: relative;
-}
 
-.gym__video {
-  position: absolute;
-  top: 290px;
-  left: -64px;
-}
-
-.gym__video a {
-  display: block;
-  width: 100%;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color-dark-cerulean, 0.5);
-    z-index: 1;
+  @include vp-767 {
+    height: 167px;
   }
 }
 
-.gym__video-button {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 27.6%;
-  left: 36.5%;
-  border: none;
-  background: transparent;
-  background: url("../img/svg/play.svg") no-repeat center;
-  z-index: 10;
-  cursor: pointer;
+.gym__img-wrapper img {
+  object-fit: cover;
+
+  @include vp-1023 {
+    width: 100%;
+    height: 344px;
+  }
+
+  @include vp-767 {
+    height: 313px;
+  }
 }
