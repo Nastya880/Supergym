@@ -1202,10 +1202,12 @@ button,
   display: grid;
   -ms-grid-columns: minmax(377px, 397px) auto;
   grid-template-columns: minmax(377px, 397px) auto;
+  gap: 64px;
 }
 @media (max-width: 1023px) {
   .intro__container {
     padding: 19px 45px 82px;
+    gap: 31px;
     -ms-grid-columns: 323px auto;
     grid-template-columns: 323px auto;
   }
@@ -1294,6 +1296,7 @@ button,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  z-index: 10;
 }
 
 .intro__description-wrapper p {
@@ -1353,6 +1356,7 @@ button,
   margin-top: 5px;
   padding: 19px 0 20px;
   border: 4px solid #ffffff;
+  z-index: 10;
 }
 
 @media (max-width: 767px) {
@@ -1388,7 +1392,6 @@ button,
 }
 
 .intro img {
-  margin-left: 64px;
   margin-top: -22px;
   min-width: 500px;
   min-height: 556px;
@@ -1401,7 +1404,7 @@ button,
 @media (max-width: 1023px) {
   .intro img {
     margin-top: 0;
-    margin-left: 31px;
+    margin-left: 0;
     width: 324px;
     height: 390px;
     min-width: 324px;

@@ -2,9 +2,11 @@
   padding: 0 303px 51px 122px;
   display: grid;
   grid-template-columns: minmax(377px, 397px) auto;
+  gap: 64px;
 
   @include vp-1023 {
     padding: 19px 45px 82px;
+    gap: 31px;
     grid-template-columns: 323px auto;
   }
 
@@ -74,6 +76,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 10;
+  // max-width: 270px;
+  // background-color: #fff;
 }
 
 .intro__description-wrapper p {
@@ -118,6 +123,7 @@
   margin-top: 5px;
   padding: 19px 0 20px;
   border: 4px solid $color-default-white;
+  z-index: 10;
 
   @include vp-1023 {
     width: 186px;
@@ -134,25 +140,18 @@
 }
 
 .intro img {
-  margin-left: 64px;
-  // position: relative;
-  // top: -21px;
   margin-top: -22px;
-
   min-width: 500px;
   min-height: 556px;
 
   @include vp-1279 {
-    // min-width: none;
-    // min-height: none;
-    // // width: 324px;
-    // // height: 390px;
     margin-left: 20px;
   }
 
   @include vp-1023 {
     margin-top: 0;
-    margin-left: 31px;
+    margin-left: 0;
+    // margin-left: 31px;
     width: 324px;
     height: 390px;
     min-width: 324px;
