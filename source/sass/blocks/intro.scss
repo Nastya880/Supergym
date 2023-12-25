@@ -1,12 +1,16 @@
 .intro__container {
   padding: 0 303px 51px 122px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(377px, 397px) auto;
 
   @include vp-1023 {
     padding: 19px 45px 82px;
+    grid-template-columns: 323px auto;
   }
 
   @include vp-767 {
+    // grid-template-columns: 320px;
+    display: flex;
     width: 100%;
     padding: 18px 14px 79px 12px;
   }
@@ -14,39 +18,49 @@
 
 .intro__description {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 377px;
-  max-width: 397px;
+  grid-template-areas: "list-gym intro" "list-gym button";
+  // width: 377px;
+  // max-width: 397px;
   column-gap: 18px;
   margin-top: 88px;
 
   @include vp-1023 {
-    width: 323px;
+    // width: 323px;
     margin-top: 49px;
     column-gap: 25px;
   }
 
   @include vp-767 {
+    grid-template-areas: "list-gym intro" "button button";
     gap: 0;
     // width: auto;
     min-width: 100%;
   }
 }
 
+.intro__description-wrapper {
+  // max-width: 397px;
+  // overflow-wrap: break-word;
+  // word-break: break-all;
+// background-color: #fff;
+}
+
 .intro__list {
+  grid-area: list-gym;
   list-style: none;
   margin-bottom: 85px;
   padding: 0;
-  align-self: flex-end;
-  margin: 0 0 80px;
+  align-self: center;
+  margin-top: 92px;
 
   @include vp-1023 {
-    margin-bottom: 47px;
+    margin-top: 80px;
   }
 
   @include vp-767 {
-    margin-bottom: 32px;
-    margin-right: -7px;
+    margin-bottom: 33px;
+    align-self: flex-end;
+    margin-right: -6px;
   }
 }
 
@@ -56,6 +70,7 @@
 }
 
 .intro__description-wrapper {
+  grid-area: intro;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -69,7 +84,7 @@
   @include vp-1023 {
     font-size: 34px;
     letter-spacing: 1.02px;
-    margin-right: 5px;
+    margin-right: 4px;
     margin-bottom: 7px;
   }
 
@@ -96,7 +111,7 @@
 }
 
 .intro__button {
-  grid-column: 2/3;
+  grid-area: button;
   align-self: start;
   justify-self: end;
   width: 234px;
@@ -112,7 +127,6 @@
   }
 
   @include vp-767 {
-    grid-column: 1/-1;
     width: 100%;
     margin-top: 21px;
     padding: 21px 18px 20px;
@@ -120,7 +134,7 @@
 }
 
 .intro img {
-  margin-left: 62px;
+  margin-left: 64px;
   // position: relative;
   // top: -21px;
   margin-top: -22px;
@@ -128,9 +142,19 @@
   min-width: 500px;
   min-height: 556px;
 
+  @include vp-1279 {
+    // min-width: none;
+    // min-height: none;
+    // // width: 324px;
+    // // height: 390px;
+    margin-left: 20px;
+  }
+
   @include vp-1023 {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 31px;
+    width: 324px;
+    height: 390px;
     min-width: 324px;
     min-height: 390px;
   }

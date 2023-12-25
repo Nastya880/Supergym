@@ -1,0 +1,21 @@
+.tickets__controls-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 46px;
+  border-bottom: 2px solid rgba($color-grey, 0.20);
+}
+
+.tickets__control-button {
+  @include font($ff-roboto, 400, 20px, rgba($color-sapphire, 0.5), 150%);
+  position: relative;
+  background-color: $color-ghost-white;
+  border: none;
+
+  &.is-active {
+    opacity: 1;
+    margin-bottom: -2px;
+    border-bottom: 2px solid  $color-crimson;
+  }
+}

@@ -23,10 +23,14 @@ $color-chambray:                    #495A7D;
 $color-grey:                        #787878;
 $color-crimson:                     #d10a42;
 $color-black-russian:               #030a1a;
+$color-whisper:                     #e8e8e8;
+$color-grey:                        #787878;
 
 // Gradient
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$blue-to-red-conic:                 conic-gradient(from 151deg at 16.03% 39.06%, $color-dark-cerulean 32.23633825778961deg, $color-venetian-red 313.3060026168823deg);
+// $blue-to-red-conic:                 conic-gradient(from 151deg at 16.03% 39.06%, $color-dark-cerulean 32.23633825778961deg, $color-venetian-red 313.3060026168823deg);
+$blue-to-red-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg,$color-dark-cerulean 32.24deg,$color-venetian-red 313.31deg,$color-dark-cerulean 392.24deg);
+
 $blue-to-red-linear:                linear-gradient(143deg, $color-crimson 0%, $color-cobalt 87.33%);
 $red-to-blue:                       var(--1, linear-gradient(97deg, $color-torch-red 17.6%, $color-cobalt 95.31%));
 
@@ -60,6 +64,7 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
+$vp-800:                            800px;
 $vp-1024:                           1024px;
 $vp-1180:                           1180px;
 $vp-1280:                           1280px;
