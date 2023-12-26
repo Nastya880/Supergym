@@ -1,12 +1,16 @@
 .tickets__content {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 2px solid red;
+  // border: 2px solid red;
 }
 
 .tickets__content-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,44 +23,78 @@
 }
 
 .tickets__content-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  padding: 68px 77px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  // align-items: center;
+  z-index: -2;
+  padding: 59px 74px 55px 78px;
   background-color: $color-default-white;
+  width: 360px;
+  height: 448px;
+  // min-height: 448px;
+  // max-width: 360px;
+  display: block;
+  text-align: center;
 
   &:hover {
     // background-color: red;
     box-sizing: border-box;
-    border: 7px solid $color-crimson;
+    outline: 7px solid $color-crimson;
+    outline-offset: -7px;
     cursor: pointer;
+  }
+
+  @include vp-1023 {
+    min-width: 442px;
+    min-height: 448px;
+    padding: 68px 118px;
   }
 }
 
-.tickets__element h3 {
+.tickets__content-item h3 {
   @include font($ff-roboto, 700, 26px, $color-sapphire, 152.344%);
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  margin: 0;
 }
 
-.tickets__element p:first-of-type {
+.tickets__content-item p:first-of-type {
   @include font($ff-roboto, 400, 16px, $color-chambray, 150%);
+  margin: 4px 0 0;
 }
 
+.tickets__content-price {
+  position: relative;
+  margin-bottom: 33px;
+}
 
 .tickets__content-price p:last-of-type {
   @include font($ff-roboto, 700, 60px, $color-egyptian-blue, 150%);
-  // position: relative;
-  z-index: 10;
+  // z-index: 1;
+  padding: 0;
+  margin: 66px -5px 0 -3px;
 }
 
 .tickets__content-price p:first-of-type {
+  @include font($ff-roboto, 700, 100px, $color-whisper, 150%);
   position: absolute;
-  @include font($ff-roboto, 700, 26px, $color-whisper, 150%);
+  margin: 0;
+  bottom: -5px;
+  left: 60px;
+  z-index: -1;
 }
 
-.tickets__element a {
+.tickets__element-button {
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
-  // width: 100%;
+  // padding: 27px 42px 21px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 10px;
+  // z-index: 3;
+  max-width: 100%;
+  width: 360px;
+  // margin: 0;
+  display: inline-block;
+  z-index: 10;
 }

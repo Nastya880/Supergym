@@ -1419,7 +1419,7 @@ button,
 }
 
 .gym__container {
-  padding: 118px 103px 120px 162px;
+  padding: 118px 103px 235px 162px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 355px auto;
@@ -1676,7 +1676,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 120px 103px;
+  padding: 122px 98px 120px 93px;
 }
 @media (max-width: 1023px) {
   .tickets__container {
@@ -1697,6 +1697,7 @@ button,
   line-height: normal;
   text-align: center;
   letter-spacing: 1.62px;
+  margin: 0;
 }
 @media (max-width: 1023px) {
   .tickets h2 {
@@ -1712,6 +1713,8 @@ button,
 
 .tickets__content {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,10 +1722,11 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  border: 2px solid red;
 }
 
 .tickets__content-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -1741,43 +1745,50 @@ button,
 }
 
 .tickets__content-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 68px 77px;
+  z-index: -2;
+  padding: 59px 74px 55px 78px;
   background-color: #ffffff;
+  width: 360px;
+  height: 448px;
+  display: block;
+  text-align: center;
 }
 .tickets__content-item:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 7px solid #d10a42;
+  outline: 7px solid #d10a42;
+  outline-offset: -7px;
   cursor: pointer;
 }
+@media (max-width: 1023px) {
+  .tickets__content-item {
+    min-width: 442px;
+    min-height: 448px;
+    padding: 68px 118px;
+  }
+}
 
-.tickets__element h3 {
+.tickets__content-item h3 {
   font-weight: 700;
   font-size: 26px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   line-height: 152.344%;
-  text-transform: capitalize;
+  margin: 0;
 }
 
-.tickets__element p:first-of-type {
+.tickets__content-item p:first-of-type {
   font-weight: 400;
   font-size: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #495A7D;
   line-height: 150%;
+  margin: 4px 0 0;
+}
+
+.tickets__content-price {
+  position: relative;
+  margin-bottom: 33px;
 }
 
 .tickets__content-price p:last-of-type {
@@ -1786,32 +1797,54 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #103aae;
   line-height: 150%;
-  z-index: 10;
+  padding: 0;
+  margin: 66px -5px 0 -3px;
 }
 
 .tickets__content-price p:first-of-type {
-  position: absolute;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 100px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #e8e8e8;
   line-height: 150%;
+  position: absolute;
+  margin: 0;
+  bottom: -5px;
+  left: 60px;
+  z-index: -1;
 }
 
-.tickets__element a {
+.tickets__element-button {
   color: #102654;
   border: 2px solid #102654;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 10px;
+  max-width: 100%;
+  width: 360px;
+  display: inline-block;
+  z-index: 10;
 }
 
 .tickets__controls-list {
   list-style: none;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  gap: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 0;
+  margin-bottom: 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 36px;
+}
+
+.tickets__control-item {
+  margin: 0;
+  padding: 0;
+  padding-right: 46px;
+}
+.tickets__control-item:last-child {
+  padding-right: 0;
 }
 
 .tickets__control-button {
@@ -1820,13 +1853,13 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: rgba(16, 38, 84, 0.5);
   line-height: 150%;
-  position: relative;
   background-color: #f8f9fc;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 .tickets__control-button.is-active {
-  opacity: 1;
-  margin-bottom: -2px;
+  padding-bottom: 12px;
   border-bottom: 2px solid #d10a42;
 }
 

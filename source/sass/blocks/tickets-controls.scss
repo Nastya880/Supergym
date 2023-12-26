@@ -1,21 +1,39 @@
 .tickets__controls-list {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 46px;
+  // margin: 0;
+  display: flex;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // gap: 26px;
+  padding-bottom: 0;
+  margin-bottom: 0;
   border-bottom: 2px solid rgba($color-grey, 0.20);
+  margin-bottom: 36px;
+}
+
+.tickets__control-item {
+  margin: 0;
+  padding: 0;
+  padding-right: 46px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .tickets__control-button {
   @include font($ff-roboto, 400, 20px, rgba($color-sapphire, 0.5), 150%);
-  position: relative;
+  // position: relative;
   background-color: $color-ghost-white;
   border: none;
+  padding: 0;
+  margin: 0;
 
   &.is-active {
-    opacity: 1;
-    margin-bottom: -2px;
+    // opacity: 1;
+    // margin-bottom: -2px;
+    padding-bottom: 12px;
     border-bottom: 2px solid  $color-crimson;
   }
 }
