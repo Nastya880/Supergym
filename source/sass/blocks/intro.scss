@@ -1,33 +1,29 @@
 .intro__container {
-  padding: 0 303px 51px 122px;
+  padding: 0 2% 51px 9%;
   display: grid;
-  grid-template-columns: minmax(377px, 397px) auto;
-  gap: 64px;
+  grid-template-columns: minmax(377px, min-content) auto;
+  gap: 63px;
 
-  @include vp-1023 {
-    padding: 19px 45px 82px;
-    gap: 31px;
-    grid-template-columns: 323px auto;
+  @include vp-1279 {
+    padding: 19px 5.9% 82px;
+    gap: 30px;
+    grid-template-columns: minmax(323px, min-content) auto;
   }
 
   @include vp-767 {
-    // grid-template-columns: 320px;
-    display: flex;
-    width: 100%;
-    padding: 18px 14px 79px 12px;
+    grid-template-columns: 100%;
+    gap: 0;
+    padding: 18px 6% 79px 4%;
   }
 }
 
 .intro__description {
   display: grid;
   grid-template-areas: "list-gym intro" "list-gym button";
-  // width: 377px;
-  // max-width: 397px;
   column-gap: 18px;
   margin-top: 88px;
 
   @include vp-1023 {
-    // width: 323px;
     margin-top: 49px;
     column-gap: 25px;
   }
@@ -35,16 +31,7 @@
   @include vp-767 {
     grid-template-areas: "list-gym intro" "button button";
     gap: 0;
-    // width: auto;
-    min-width: 100%;
   }
-}
-
-.intro__description-wrapper {
-  // max-width: 397px;
-  // overflow-wrap: break-word;
-  // word-break: break-all;
-// background-color: #fff;
 }
 
 .intro__list {
@@ -60,15 +47,15 @@
   }
 
   @include vp-767 {
-    margin-bottom: 33px;
-    align-self: flex-end;
+    margin-top: 93px;
     margin-right: -6px;
+    margin-bottom: 0;
   }
 }
 
 .intro__item {
   @include font($ff-roboto, 400, 14px, $color-default-white, 150%);
-  text-align: end;
+  text-align: right;
 }
 
 .intro__description-wrapper {
@@ -77,8 +64,12 @@
   flex-direction: column;
   align-items: flex-end;
   z-index: 10;
-  // max-width: 270px;
-  // background-color: #fff;
+  max-width: 398px;
+  min-width: min-content;
+
+  @include vp-767 {
+    max-width: 353px;
+  }
 }
 
 .intro__description-wrapper p {
@@ -119,15 +110,16 @@
   grid-area: button;
   align-self: start;
   justify-self: end;
-  width: 234px;
+  width: 95%;
   margin-top: 5px;
   padding: 19px 0 20px;
   border: 4px solid $color-default-white;
   z-index: 10;
 
   @include vp-1023 {
-    width: 186px;
-    margin-top: 11px;
+    // width: 188px;
+    width: 100%;
+    margin-top: 12px;
     margin-right: -1px;
     padding: 20px 25px 19px;
   }
@@ -135,27 +127,18 @@
   @include vp-767 {
     width: 100%;
     margin-top: 21px;
+    margin-right: 0;
     padding: 21px 18px 20px;
   }
 }
 
 .intro img {
   margin-top: -22px;
-  min-width: 500px;
-  min-height: 556px;
-
-  @include vp-1279 {
-    margin-left: 20px;
-  }
+  min-width: 64.5%;
 
   @include vp-1023 {
     margin-top: 0;
-    margin-left: 0;
-    // margin-left: 31px;
     width: 324px;
-    height: 390px;
-    min-width: 324px;
-    min-height: 390px;
   }
 
   @include vp-767 {
