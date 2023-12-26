@@ -8,6 +8,8 @@
   flex-direction: column;
   align-items: center;
   padding: 122px 98px 120px 93px;
+  // padding: 122px 30% 120px 30%;
+  // max-width: 1160px;
 
   @include vp-1023 {
     padding: 100px 163px;
