@@ -1430,7 +1430,7 @@ button,
 }
 @media (max-width: 1023px) {
   .gym__container {
-    padding: 100px 45px;
+    padding: 100px 45px 184px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 44px;
@@ -1685,7 +1685,7 @@ button,
 }
 @media (max-width: 767px) {
   .tickets__container {
-    padding: 63px 15px 70px;
+    padding: 63px 15px 870px;
   }
 }
 
@@ -1730,17 +1730,25 @@ button,
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (360px)[3];
+  grid-template-columns: repeat(3, 360px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
+  max-width: 1163px;
+}
+@media (max-width: 1279px) {
+  .tickets__content-list {
+    -ms-grid-columns: (360px)[2];
+    grid-template-columns: repeat(2, 360px);
+  }
 }
 @media (max-width: 1023px) {
   .tickets__content-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 }
 
@@ -1755,25 +1763,24 @@ button,
   height: 100%;
   display: block;
   text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
-.tickets__content-item:hover {
-  z-index: 10000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 7px solid #d10a42;
-  outline-offset: -7px;
-  cursor: pointer;
+@media (hover: hover) {
+  .tickets__content-item:hover:not(.focus-visible) {
+    outline: 7px solid #d10a42;
+    outline-offset: -7px;
+    cursor: pointer;
+  }
 }
 @media (max-width: 1023px) {
   .tickets__content-item {
-    min-width: 442px;
+    max-width: 442px;
+    width: 442px;
     min-height: 448px;
-    padding: 68px 118px;
+    padding: 64px 118px;
   }
-}
-
-.tickets__content-item:hover {
-  background-color: red;
 }
 
 .tickets__content-item h3 {
@@ -1832,10 +1839,13 @@ button,
   padding-right: 45px;
   display: inline-block;
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .tickets__element-button {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 27px;
+    padding-bottom: 28px;
+    padding-left: 44px;
+    padding-right: 45px;
+    outline-offset: -3px;
   }
 }
 
