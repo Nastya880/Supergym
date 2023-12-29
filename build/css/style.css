@@ -1438,7 +1438,7 @@ button,
 }
 @media (max-width: 767px) {
   .gym__container {
-    padding: 60px 0 70px;
+    padding: 60px 0 420px;
   }
 }
 
@@ -1685,7 +1685,7 @@ button,
 }
 @media (max-width: 767px) {
   .tickets__container {
-    padding: 63px 15px 870px;
+    padding: 66px 15px 870px;
   }
 }
 
@@ -1708,6 +1708,7 @@ button,
   .tickets h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 6px;
   }
 }
 
@@ -1748,7 +1749,7 @@ button,
   .tickets__content-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 35px;
   }
 }
 
@@ -1779,7 +1780,14 @@ button,
     max-width: 442px;
     width: 442px;
     min-height: 448px;
-    padding: 64px 118px;
+    padding: 62px 110px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__content-item {
+    max-width: 290px;
+    min-height: 384px;
+    padding: 52px 58px 0;
   }
 }
 
@@ -1791,6 +1799,12 @@ button,
   line-height: 152.344%;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .tickets__content-item h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+}
 
 .tickets__content-item p:first-of-type {
   font-weight: 400;
@@ -1800,10 +1814,27 @@ button,
   line-height: 150%;
   margin: 4px 0 0;
 }
+@media (max-width: 767px) {
+  .tickets__content-item p:first-of-type {
+    margin: 8px;
+  }
+}
 
 .tickets__content-price {
   position: relative;
   margin-bottom: 33px;
+}
+@media (max-width: 767px) {
+  .tickets__content-price {
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tickets__content-price svg {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .tickets__content-price p:last-of-type {
@@ -1814,6 +1845,13 @@ button,
   line-height: 150%;
   padding: 0;
   margin: 66px -5px 0 -5px;
+}
+@media (max-width: 767px) {
+  .tickets__content-price p:last-of-type {
+    font-size: 48px;
+    margin-top: 57px;
+    margin-left: 2px;
+  }
 }
 
 .tickets__content-price p:first-of-type {
@@ -1848,6 +1886,14 @@ button,
     outline-offset: -3px;
   }
 }
+@media (max-width: 767px) {
+  .tickets__element-button {
+    margin-top: -3px;
+    margin-left: -16.5px;
+    width: 206px;
+    outline-offset: -2px;
+  }
+}
 
 .tickets__controls-list {
   list-style: none;
@@ -1858,9 +1904,14 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 0;
-  margin-bottom: 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin-bottom: 36px;
+}
+@media (max-width: 767px) {
+  .tickets__controls-list {
+    padding-bottom: -10px;
+    margin-bottom: 30px;
+  }
 }
 
 .tickets__control-item {
@@ -1870,6 +1921,11 @@ button,
 }
 .tickets__control-item:last-child {
   padding-right: 0;
+}
+@media (max-width: 767px) {
+  .tickets__control-item {
+    padding-right: 45px;
+  }
 }
 
 .tickets__control-button {
@@ -1886,6 +1942,11 @@ button,
 .tickets__control-button.is-active {
   padding-bottom: 12px;
   border-bottom: 2px solid #d10a42;
+}
+@media (max-width: 767px) {
+  .tickets__control-button {
+    font-size: 16px;
+  }
 }
 
 [data-tabs=parent] {
