@@ -68,10 +68,6 @@
   }
 }
 
-.super-games__date,
-.super-games__time  {
-  justify-self: baseline;
-}
 
 .super-games__info-wrapper h3 {
   @include font($ff-roboto, 300, 18px, $color-default-white, 24px);
@@ -119,50 +115,6 @@
   }
 }
 
-.super-games__time p {
-  margin-top: -10px;
-
-  @include vp-767 {
-    // color: red;
-  }
-}
-
-.super-games__date-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  column-gap: 6px;
-  margin: 0;
-  padding: 0;
-  margin-top: -4px;
-
-  @include vp-1023 {
-    margin-top: -15px;
-    column-gap: 4px;
-  }
-
-  @include vp-767 {
-    margin-left: -2px;
-  }
-}
-
-.super-games__date-month-wrapper {
-  margin-top: 3px;
-
-  @include vp-1023 {
-    margin-top: 6px;
-  }
-}
-
-.super-games__date-month-wrapper p {
-  @include font($ff-roboto, 400, 14px, $color-default-white, 14px);
-  margin-left: 7px;
-
-  @include vp-1023 {
-    font-size: 10px;
-    line-height: 130%;
-  }
-}
-
 .super-games__info-wrapper p {
   margin: 0;
 }
@@ -185,21 +137,6 @@
   }
 }
 
-.super-games__time p {
-  margin-top: -4px;
-
-  @include vp-1023 {
-    margin-top: -15px;
-  }
-}
-
-.super-games__time {
-  @include vp-1023 {
-    margin-top: -10px;
-  }
-
-}
-
 .super-games__button {
   grid-column: 1/-1;
   display: block;
@@ -207,18 +144,9 @@
   border: 4px solid $color-default-white;
 
   @include vp-1023 {
-    padding: 12px 0 11px;
+    padding: 12px 0 14px;
     border: 2px solid;
-  }
-
-  @include vp-767 {
-    // border: none;
-    // max-width: 90%;
-    // margin-left: 0px;
-
-    // padding-left: -1px;
-    // outline: 2px solid $color-default-white;
-    // outline-offset: -1px;
+    font-size: 10px;
   }
 }
 
