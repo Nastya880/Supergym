@@ -1686,7 +1686,7 @@ button,
 }
 @media (max-width: 767px) {
   .tickets__container {
-    padding: 66px 15px 870px;
+    padding: 66px 15px 70px;
   }
 }
 
@@ -1717,7 +1717,7 @@ button,
   display: block;
   position: absolute;
   bottom: -80px;
-  right: -108px;
+  right: -100px;
 }
 @media (max-width: 1023px) {
   .tickets img {
@@ -2076,6 +2076,296 @@ button,
 
 [data-tabs=accordion].is-active > [data-tabs=accordion-wrapper] {
   max-height: none;
+}
+
+.super-games .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  padding: 123px 103px 52px;
+}
+@media (max-width: 1023px) {
+  .super-games .container {
+    padding: 101px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games .container {
+    padding: 71px 15px 31px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.super-games__description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 201px 95px;
+  grid-template-columns: 201px 95px;
+  -ms-grid-rows: (-webkit-min-content)[3];
+  -ms-grid-rows: (min-content)[3];
+  grid-template-rows: repeat(3, -webkit-min-content);
+  grid-template-rows: repeat(3, min-content);
+  -webkit-column-gap: 52px;
+     -moz-column-gap: 52px;
+          column-gap: 52px;
+  padding: 80px 76px 85px 76px;
+  background-color: #ff1553;
+}
+@media (max-width: 1023px) {
+  .super-games__description {
+    -ms-grid-columns: 117px 56px;
+    grid-template-columns: 117px 56px;
+    -webkit-column-gap: 29px;
+       -moz-column-gap: 29px;
+            column-gap: 29px;
+    row-gap: 0;
+    padding: 46px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__description {
+    padding: 45px 43px 50px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+
+.super-games h2 {
+  font-weight: 600;
+  font-size: 82px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  color: #ffffff;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  margin: 5px 0 0 14px;
+}
+@media (max-width: 1023px) {
+  .super-games h2 {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+    margin-left: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games h2 {
+    margin-left: 8px;
+  }
+}
+
+.super-games__info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 0px;
+  margin-top: -7px;
+  margin-bottom: 3px;
+  max-width: 100%;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+@media (max-width: 1023px) {
+  .super-games__info-wrapper {
+    gap: 0;
+    margin-top: -9px;
+    margin-bottom: 0;
+  }
+}
+
+.super-games__date,
+.super-games__time {
+  justify-self: baseline;
+}
+
+.super-games__info-wrapper h3 {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  line-height: 24px;
+  display: block;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .super-games__info-wrapper h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+  }
+}
+@media (max-width: 767px) {
+  .super-games__info-wrapper h3 {
+    margin-left: -1px;
+  }
+}
+.super-games__info-wrapper h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -9px;
+  background-color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .super-games__info-wrapper h3::after {
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__info-wrapper h3::after {
+    bottom: -1px;
+  }
+}
+
+.super-games__date-wrapper > p:first-child,
+.super-games__time p {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  line-height: 40px;
+}
+@media (max-width: 1023px) {
+  .super-games__date-wrapper > p:first-child,
+.super-games__time p {
+    font-size: 24px;
+    line-height: 150%; /* 36px */
+  }
+}
+
+.super-games__time p {
+  margin-top: -10px;
+}
+.super-games__date-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (-webkit-min-content)[2];
+  -ms-grid-columns: (min-content)[2];
+  grid-template-columns: repeat(2, -webkit-min-content);
+  grid-template-columns: repeat(2, min-content);
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+}
+@media (max-width: 1023px) {
+  .super-games__date-wrapper {
+    margin-top: -15px;
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__date-wrapper {
+    margin-left: -2px;
+  }
+}
+
+.super-games__date-month-wrapper {
+  margin-top: 3px;
+}
+@media (max-width: 1023px) {
+  .super-games__date-month-wrapper {
+    margin-top: 6px;
+  }
+}
+
+.super-games__date-month-wrapper p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  line-height: 14px;
+  margin-left: 7px;
+}
+@media (max-width: 1023px) {
+  .super-games__date-month-wrapper p {
+    font-size: 10px;
+    line-height: 130%;
+  }
+}
+
+.super-games__info-wrapper p {
+  margin: 0;
+}
+
+.super-games h4 {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  line-height: 150%;
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 49px;
+}
+@media (max-width: 1023px) {
+  .super-games h4 {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games h4 {
+    margin-bottom: 31px;
+  }
+}
+
+.super-games__time p {
+  margin-top: -4px;
+}
+@media (max-width: 1023px) {
+  .super-games__time p {
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .super-games__time {
+    margin-top: -10px;
+  }
+}
+
+.super-games__button {
+  grid-column: 1/-1;
+  display: block;
+  padding: 25px 0 24px;
+  border: 4px solid #ffffff;
+}
+@media (max-width: 1023px) {
+  .super-games__button {
+    padding: 12px 0 11px;
+    border: 2px solid;
+  }
+}
+.super-games img {
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .super-games img {
+    min-height: 292px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games img {
+    min-height: 290px;
+  }
 }
 
 /* @mixin hover-focus {

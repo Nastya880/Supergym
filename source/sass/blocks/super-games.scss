@@ -1,0 +1,238 @@
+.super-games .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 123px 103px 52px;
+
+  @include vp-1023 {
+    padding: 101px 45px;
+  }
+
+  @include vp-767 {
+    padding: 71px 15px 31px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.super-games__description {
+  display: grid;
+  grid-template-columns: 201px 95px;
+  grid-template-rows: repeat(3, min-content);
+  column-gap: 52px;
+  padding: 80px 76px 85px 76px;
+  background-color: $color-torch-red;
+
+  @include vp-1023 {
+    grid-template-columns: 117px 56px;
+    column-gap: 29px;
+    row-gap: 0;
+    padding: 46px 45px;
+  }
+
+  @include vp-767 {
+    padding: 45px 43px 50px;
+    column-gap: 24px;
+    grid-template-columns: auto auto;
+  }
+}
+
+.super-games h2 {
+  @include font($ff-alumni-sans, 600, 82px, $color-default-white, 96%);
+  letter-spacing: 2.46px;
+  margin: 5px 0 0 14px;
+
+  @include vp-1023 {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+    margin-left: 7px;
+  }
+
+  @include vp-767 {
+    margin-left: 8px;
+  }
+}
+
+.super-games__info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0px;
+  margin-top: -7px;
+  margin-bottom: 3px;
+  max-width: 100%;
+  // border: 2px solid green;
+  hyphens: auto;
+
+  @include vp-1023 {
+    gap: 0;
+    margin-top: -9px;
+    margin-bottom: 0;
+  }
+}
+
+.super-games__date,
+.super-games__time  {
+  justify-self: baseline;
+}
+
+.super-games__info-wrapper h3 {
+  @include font($ff-roboto, 300, 18px, $color-default-white, 24px);
+  display: block;
+  position: relative;
+
+  @include vp-1023 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+  }
+
+  @include vp-767 {
+    margin-left: -1px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    // width: 64px;
+    height: 1px;
+    left: 0;
+    bottom: -9px;
+    background-color: $color-default-white;
+
+    @include vp-1023 {
+      bottom: 0;
+    }
+
+    @include vp-767 {
+      bottom: -1px;
+    }
+  }
+}
+
+.super-games__date-wrapper > p:first-child,
+.super-games__time p {
+  @include font($ff-roboto, 700, 40px, $color-default-white, 40px);
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 150%; /* 36px */
+  }
+}
+
+.super-games__time p {
+  margin-top: -10px;
+
+  @include vp-767 {
+    // color: red;
+  }
+}
+
+.super-games__date-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 6px;
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+
+  @include vp-1023 {
+    margin-top: -15px;
+    column-gap: 4px;
+  }
+
+  @include vp-767 {
+    margin-left: -2px;
+  }
+}
+
+.super-games__date-month-wrapper {
+  margin-top: 3px;
+
+  @include vp-1023 {
+    margin-top: 6px;
+  }
+}
+
+.super-games__date-month-wrapper p {
+  @include font($ff-roboto, 400, 14px, $color-default-white, 14px);
+  margin-left: 7px;
+
+  @include vp-1023 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+}
+
+.super-games__info-wrapper p {
+  margin: 0;
+}
+
+.super-games h4 {
+  @include font($ff-roboto, 400, 18px, $color-default-white, 150%);
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 49px;
+  // padding: 0;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 31px;
+  }
+}
+
+.super-games__time p {
+  margin-top: -4px;
+
+  @include vp-1023 {
+    margin-top: -15px;
+  }
+}
+
+.super-games__time {
+  @include vp-1023 {
+    margin-top: -10px;
+  }
+
+}
+
+.super-games__button {
+  grid-column: 1/-1;
+  display: block;
+  padding: 25px 0 24px;
+  border: 4px solid $color-default-white;
+
+  @include vp-1023 {
+    padding: 12px 0 11px;
+    border: 2px solid;
+  }
+
+  @include vp-767 {
+    // border: none;
+    // max-width: 90%;
+    // margin-left: 0px;
+
+    // padding-left: -1px;
+    // outline: 2px solid $color-default-white;
+    // outline-offset: -1px;
+  }
+}
+
+.super-games img {
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @include vp-1023 {
+    min-height: 292px;
+  }
+
+  @include vp-767 {
+    min-height: 290px;
+  }
+}
