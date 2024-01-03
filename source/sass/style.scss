@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -33,6 +33,8 @@
 @import "blocks/super-games";
 @import "blocks/super-games-date";
 @import "blocks/super-games-time";
+@import "blocks/trainers";
+@import "blocks/trainers-info";
 
 // ---------------------------------
 
