@@ -13,6 +13,15 @@
   margin: 0;
   margin-top: 51px;
   padding: 0;
+
+  @include vp-1023 {
+    margin-left: -7px;
+  }
+
+  @include vp-767 {
+    margin-top: 41px;
+    margin-left: 0;
+  }
 }
 
 .trainers__info p {
@@ -23,6 +32,14 @@
   margin-top: -3px;
   margin-bottom: 33px;
   margin-left: 0;
+
+  @include vp-1023 {
+    margin-left: -7px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .trainers__info-list {
@@ -47,6 +64,10 @@
   margin-left: 31px;
   margin-right: 10px;
   position: relative;
+
+  @include vp-767 {
+    margin-left: 10px;
+  }
 }
 
 .trainers__info-item:before {
