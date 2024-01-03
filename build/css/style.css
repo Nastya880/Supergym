@@ -3971,6 +3971,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item--equipment {
+    max-width: none;
     margin: 40px 0 45px;
   }
 }
