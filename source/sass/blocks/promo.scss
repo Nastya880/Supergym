@@ -1,0 +1,121 @@
+.promo {}
+
+.promo__container {
+  padding: 55px 103px 50px;
+
+  @include vp-1023 {
+    padding: 91px 45px 40px;
+  }
+
+  @include vp-767 {
+    padding: 63px 15px 5px;
+  }
+}
+
+.promo h2 {
+  @include font($ff-alumni-sans, 600, 54px, $color-sapphire, normal);
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin-bottom: 34px;
+
+  @include vp-1023 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.promo__description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.promo__description-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr;
+
+  margin: 0;
+  padding: 0;
+
+  @include vp-1023 {}
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo__description-text {
+  background-color: $color-torch-red-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px;
+  // height: 462px;
+  min-height: fit-content;
+}
+
+.promo__description-wrapper img {
+  height: 100%;
+  // width: 100%;
+  object-fit: cover;
+}
+
+.promo__description-text h3 {
+  @include font($ff-roboto, 700, 28px, $color-default-white, 156%);
+  // margin: 0;
+  margin-top: -7px;
+  margin-bottom: -20px;
+  // padding: 0;
+
+  @include vp-1023 {}
+
+  @include vp-767 {}
+}
+
+.promo__description-text span {
+  @include font($ff-roboto, 700, 70px, $color-default-white, 156%);
+  // margin: 0;
+  // margin-top: -20px;
+  // padding: 0;
+  // margin-bottom: 0;
+
+  @include vp-1023 {}
+
+  @include vp-767 {}
+}
+
+.promo__description-text p {
+  @include font($ff-roboto, 400, 18px, $color-default-white, 140%);
+  // margin: 0;
+  // padding: 0;
+  margin-top: -10px;
+
+  @include vp-1023 {}
+
+  @include vp-767 {}
+}
+
+.promo__description-text a {
+  @include font($ff-roboto, 700, 14px, $color-default-white, normal);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  // text-decoration: underline;
+  // display: inline-block;
+  // padding-right: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $color-default-white;
+  width: min-content;
+  // margin: 0;
+  // padding: 0;
+  // margin-bottom: 52px;
+
+  @include vp-1023 {}
+
+  @include vp-767 {}
+}
