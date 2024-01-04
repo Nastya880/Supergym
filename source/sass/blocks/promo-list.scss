@@ -17,80 +17,63 @@
   }
 }
 
-.promo__item {
-  display: block;
-
+.promo__item-wrapper {
   border: 7px solid #D10A42;
-  padding: 0 28px;
-  margin: 0;
+  padding: 21px 35px 28px 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  // width: 560px;
+  justify-content: space-between;
+  min-height: 100%;
 
   @include vp-1023 {
     min-height: 211px;
-    // padding: 0;
-    // padding-right: 50px;
+    padding-top: 18px;
+  }
+
+  @include vp-767 {
+    min-height: 211px;
+    padding: 29px 35px 36px 36px;
+    text-align: center;
   }
 }
 
 .promo__item h4 {
-  @include font($ff-roboto, 700, 26px, $color-sapphire, 150%);
+  @include font($ff-roboto, 700, 26px, $color-resolution-blue, 150%);
   margin: 0;
   padding: 0;
-  margin-top: -12px;
+  margin-bottom: 0px;
 
   @include vp-1023 {
-    margin-top: -7px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
-  @include vp-767 {}
-}
-
-.promo__item--discount h4 {
-  @include vp-1023 {
-    margin-top: -16px;
-    margin-bottom: 3px;
+  @include vp-767 {
+    margin-bottom: 4px;
   }
 }
 
 .promo__item p {
-  @include font($ff-roboto, 400, 16px, $color-sapphire, 140%);
+  @include font($ff-roboto, 400, 16px, $color-resolution-blue, 140%);
   margin: 0;
   padding: 0;
-
-  @include vp-1023 {}
-
-  @include vp-767 {
-    text-align: center;
-  }
 }
 
 .promo__item a {
-  @include font($ff-roboto, 700, 12px, $color-sapphire, normal);
+  @include font($ff-roboto, 700, 12px, $color-resolution-blue, normal);
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding-bottom: 0px;
+
   display: block;
-  margin-bottom: -4px;
-  // margin-top: 20px;
-  border-bottom: 1px solid $color-sapphire;
-  width: min-content;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $color-resolution-blue;
+  align-self: baseline;
 
   @include vp-1023 {
-    margin-bottom: 4px;
     padding-bottom: 2px;
   }
 
   @include vp-767 {
-    text-align: center;
-  }
-}
-
-.promo__item--discount a {
-  @include vp-1023 {
-    margin-bottom: -7px;
+    align-self: center;
   }
 }

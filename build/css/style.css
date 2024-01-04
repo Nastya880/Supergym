@@ -4245,11 +4245,9 @@ button,
   }
 }
 
-.promo__item {
-  display: block;
+.promo__item-wrapper {
   border: 7px solid #D10A42;
-  padding: 0 28px;
-  margin: 0;
+  padding: 21px 35px 28px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4257,12 +4255,22 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100%;
 }
 @media (max-width: 1023px) {
-  .promo__item {
+  .promo__item-wrapper {
     min-height: 211px;
+    padding-top: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__item-wrapper {
+    min-height: 211px;
+    padding: 29px 35px 36px 36px;
+    text-align: center;
   }
 }
 
@@ -4270,22 +4278,20 @@ button,
   font-weight: 700;
   font-size: 26px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #102654;
+  color: #1C3374;
   line-height: 150%;
   margin: 0;
   padding: 0;
-  margin-top: -12px;
+  margin-bottom: 0px;
 }
 @media (max-width: 1023px) {
   .promo__item h4 {
-    margin-top: -7px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 }
-@media (max-width: 1023px) {
-  .promo__item--discount h4 {
-    margin-top: -16px;
-    margin-bottom: 3px;
+@media (max-width: 767px) {
+  .promo__item h4 {
+    margin-bottom: 4px;
   }
 }
 
@@ -4293,48 +4299,37 @@ button,
   font-weight: 400;
   font-size: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #102654;
+  color: #1C3374;
   line-height: 140%;
   margin: 0;
   padding: 0;
-}
-@media (max-width: 767px) {
-  .promo__item p {
-    text-align: center;
-  }
 }
 
 .promo__item a {
   font-weight: 700;
   font-size: 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #102654;
+  color: #1C3374;
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding-bottom: 0px;
   display: block;
-  margin-bottom: -4px;
-  border-bottom: 1px solid #102654;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #1C3374;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 @media (max-width: 1023px) {
   .promo__item a {
-    margin-bottom: 4px;
     padding-bottom: 2px;
   }
 }
 @media (max-width: 767px) {
   .promo__item a {
-    text-align: center;
-  }
-}
-
-@media (max-width: 1023px) {
-  .promo__item--discount a {
-    margin-bottom: -7px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
