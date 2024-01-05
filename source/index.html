@@ -443,16 +443,14 @@
                 </ul>
               </div>
 
-              <button class="trainers__content-button trainers__content-button--prev" data-swiper-trainers-button="prev" type="button"  aria-label="Посмотреть предыдущий слайд">
+              <button class="trainers__content-button trainers__content-button--prev" data-swiper-trainers-button="prev" type="button" aria-label="Посмотреть предыдущий слайд">
                 <svg width="16" height="32">
                   <use href="./img/sprite.svg#arrow-left"></use>
                 </svg>
               </button>
 
               <button class="trainers__content-button trainers__content-button--next" data-swiper-trainers-button="next" type="button" aria-label="Посмотреть следующий слайд">
-                <span class="visually-hidden">Следующий слайд</span>
-
-                <svg width="18" height="34">
+                <svg width="16" height="32">
                   <use href="./img/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
@@ -546,7 +544,7 @@
               <ul class="promo__list">
                 <li class="promo__item promo__item--free">
                     <div class="promo__item-wrapper">
-                      <div class="promo__item-content">
+                      <div class="promo__item-text">
                         <h4>Месяц бесплатно</h4>
                         <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
                       </div>
@@ -555,7 +553,7 @@
                 </li>
                 <li class="promo__item promo__item--discount">
                     <div class="promo__item-wrapper">
-                      <div class="promo__item-content">
+                      <div class="promo__item-text">
                         <h4>Скидка 20%</h4>
                         <p>Корпоративный фитнес с&nbsp;командой</p>
                       </div>
@@ -564,6 +562,56 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="feedback__container container">
+            <h2>Отзывы</h2>
+            <div class="feedback__swiper swiper" data-swiper="feedback">
+
+              <ul class="feedback__list swiper-wrapper">
+                <li class="feedback__item swiper-slide" tabindex="0">
+                  <picture>
+                    <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/promo-mobile.jpg 1x, img/promo-mobile@2x.jpg 2x">
+                    <source media="(max-width: 767px)" type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+
+                    <source media="(max-width: 1023px)" type="image/jpg" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x"> -->
+
+                    <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
+                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
+                  </picture>
+                  <div class="feedback__item-text">
+                    <h3>Анна Орлова</h3>
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+                <li class="feedback__item swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
+                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
+                  </picture>
+                  <div class="feedback__item-text">
+                    <h3>Анна Орлова 1</h3>
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+
+              </ul>
+
+
+            </div>
+            <button class="feedback__button feedback__button--prev" data-swiper-feedback-button="prev" type="button" aria-label="Посмотреть предыдущий слайд">
+              <svg width="16" height="32">
+                <use href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+
+            <button class="feedback__button feedback__button--next" data-swiper-feedback-button="next" type="button" aria-label="Посмотреть следующий слайд">
+              <svg width="16" height="32">
+                <use href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </main>

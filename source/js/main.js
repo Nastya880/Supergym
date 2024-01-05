@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {showVideo} from './modules/showVideo';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSwiperTrainers} from './modules/initSwiperTrainers';
+import {initSwiperFeedback} from './modules/initSwiperFeedback';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     showVideo();
     initTabs();
     initSwiperTrainers();
+    initSwiperFeedback();
     initModals();
     const form = new Form();
     window.form = form;
