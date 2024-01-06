@@ -4337,6 +4337,11 @@ button,
   padding: 22px 403px 120px;
   position: relative;
 }
+@media (max-width: 1279px) {
+  .feedback__container {
+    padding: 22px 29% 120px;
+  }
+}
 @media (max-width: 1023px) {
   .feedback__container {
     padding: 16px 101px;
@@ -4476,7 +4481,7 @@ button,
     margin: 0;
     margin-left: -16px;
     text-align: center;
-    width: 176px;
+    min-width: 176px;
   }
 }
 
@@ -4500,6 +4505,11 @@ button,
   top: 51.2%;
   left: 340px;
 }
+@media (max-width: 1279px) {
+  .feedback__button--prev {
+    left: 24%;
+  }
+}
 @media (max-width: 1023px) {
   .feedback__button--prev {
     top: 61.2%;
@@ -4517,6 +4527,11 @@ button,
   position: absolute;
   top: 51.2%;
   right: 340px;
+}
+@media (max-width: 1279px) {
+  .feedback__button--next {
+    right: 24%;
+  }
 }
 @media (max-width: 1023px) {
   .feedback__button--next {

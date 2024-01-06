@@ -1,6 +1,11 @@
 .feedback__container {
   padding: 22px 403px 120px;
+
   position: relative;
+
+  @include vp-1279 {
+    padding: 22px 29% 120px;
+  }
 
   @include vp-1023 {
     padding: 16px 101px;
@@ -107,7 +112,7 @@
     margin-left: -16px;
     // margin-top: -65px;
     text-align: center;
-    width: 176px;
+    min-width: 176px;
   }
 }
 
@@ -130,6 +135,10 @@
   top: 51.2%;
   left: 340px;
 
+  @include vp-1279 {
+    left: 24%;
+  }
+
   @include vp-1023 {
     top: 61.2%;
     left: 37px;
@@ -145,6 +154,10 @@
   position: absolute;
   top: 51.2%;
   right: 340px;
+
+  @include vp-1279 {
+    right: 24%;
+  }
 
   @include vp-1023 {
     top: 61.2%;
