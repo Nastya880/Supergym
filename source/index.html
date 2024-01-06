@@ -608,6 +608,49 @@
             </button>
           </div>
         </section>
+
+        <div class="connection__wrapper ">
+          <section class="form">
+            <div class="form__container">
+              <h2>Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" pattern="(^[a-zA-Z]+$)|(^[А-Яа-яЁё\s]+$)(^[-\s]+$)" required>
+                <label class="visually-hidden" for="phone">Введите Ваш Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                <button class="reservation__form-button" type="submit">отправить</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="contacts">
+            <div class="contacts__container container">
+              <h2>Контакты</h2>
+              <div class="contacts__list-wrapper">
+                <ul class="contacts__list-about contacts__list">
+                  <li class="contacts__item-about">
+                    <h3>Адрес:</h3>
+                    <address>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</address>
+                  </li>
+                  <li class="contacts__item-about">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </li>
+                </ul>
+                <ul class="contacts__list-connect contacts__list">
+                  <li class="contacts__item-connect contacts__item-connect--phone">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555" aria-label="88005555555">8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item-connect contacts__item-connect--email">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru" aria-label="omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
       <footer>
         <div class="container"></div>

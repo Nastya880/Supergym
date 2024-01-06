@@ -1,0 +1,18 @@
+.connection__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // align-items: center;
+  grid-template-rows: minmax(337px, 1fr);
+  // justify-items: end;
+  background: linear-gradient(to right, $color-sapphire 50%, $color-default-white 50%);
+}
+
+.connection__wrapper::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 50%;
+  height: 1px;
+  background-color: $color-light-slate-grey;
+}

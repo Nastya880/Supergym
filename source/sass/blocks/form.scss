@@ -1,0 +1,99 @@
+.form {
+  justify-self: end;
+}
+
+.form__container {
+  // padding: 56px 148px 70px 148px;
+  padding-top: 56px;
+  padding-bottom: 68px;
+  max-width: 410px;
+  margin-right: 171px;
+  width: 100%;
+}
+
+form  {
+  margin: 0;
+  padding: 0;
+}
+
+.form h2 {
+  @include font($ff-alumni-sans, 800, 54px, $color-default-white, 156%);
+  letter-spacing: 1.62px;
+  margin: 0;
+  // padding: 0;
+  margin-bottom: 20px;
+  letter-spacing: 2.4px; ////// PP ---- ??
+
+  @include vp-1023 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+  }
+}
+
+.form form {
+  // margin: 0;
+  // padding: 0;
+  width: 410px;
+  display: grid;
+  grid-template-areas: "name-form phone-form" "btn btn";
+  column-gap: 30px;
+  row-gap: 28px;
+
+  @include vp-767 {
+    grid-template-areas: "name-form" "phone-form" "btn";
+  }
+}
+
+.form input[type="text"] {
+  grid-area: name-form;
+}
+
+.form input[type="tel"] {
+  grid-area: phone-form;
+}
+
+.form input {
+  background-color: transparent;
+  border: none;
+  color: $color-default-white;
+  // border-bottom: 1px solid $color-light-slate-grey;
+
+  display: block;
+  // margin-top: 10px;
+  width: 100%;
+  padding-bottom: 5.5px;
+  border-bottom: 1px solid $color-light-slate-grey;
+  // align-self: baseline;
+}
+
+.form input::placeholder {
+  @include font($ff-roboto, 400, 14px, $color-default-white, normal);
+
+  @include vp-1023 {}
+  @include vp-767 {}
+}
+
+
+.form button {
+  grid-area: btn;
+  @include font($ff-roboto, 700, 14px, $color-default-white, normal);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 16px 0 17px;
+  width: 100%;
+  border: 3px  solid $color-default-white;
+  width: 413px;
+
+  @include vp-1023 {}
+  @include vp-767 {}
+}
+
