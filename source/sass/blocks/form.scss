@@ -8,14 +8,16 @@
     background-color: $color-sapphire;
     // margin: 0 auto;
   }
+  @include vp-767 {
+    justify-self: start;
+  }
 }
 
 .form__container {
-  // padding: 56px 148px 70px 148px;
   padding-top: 56px;
   padding-bottom: 68px;
-  max-width: 410px;
   margin-right: 171px;
+  max-width: 410px;
   width: 100%;
 
   @include vp-1023 {
@@ -23,9 +25,11 @@
     margin: 0;
     padding: 61px 148px 69px 147px;
     max-width: none;
-    // width: 472px;
-    // min-width: 100%;
-    // padding-right: 148px;
+  }
+
+  @include vp-767 {
+    padding: 63px 13px 69px 15px;
+    // padding: 0;
   }
 }
 
@@ -33,7 +37,6 @@
   @include font($ff-alumni-sans, 800, 54px, $color-default-white, 156%);
   letter-spacing: 1.62px;
   margin: 0;
-  // padding: 0;
   margin-bottom: 20px;
   letter-spacing: 2.4px; ////// PP ---- ??
 
@@ -49,6 +52,7 @@
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0.96px;
+    margin-bottom: 37px;
   }
 }
 
@@ -68,8 +72,11 @@
   }
 
   @include vp-767 {
-    // width: 410px;
+    gap: 0;
+    row-gap: 35px;
+    min-width: 100%;
     grid-template-areas: "name-form" "phone-form" "btn";
+    margin-left: -1px;
   }
 }
 
@@ -85,14 +92,14 @@
   background-color: transparent;
   border: none;
   color: $color-default-white;
-  // border-bottom: 1px solid $color-light-slate-grey;
-
   display: block;
-  // margin-top: 10px;
   width: 100%;
   padding-bottom: 5.5px;
   border-bottom: 1px solid $color-light-slate-grey;
-  // align-self: baseline;
+
+  @include vp-767 {
+    padding-bottom: 5px;
+  }
 }
 
 .form input::placeholder {
@@ -111,7 +118,7 @@
   background-color: transparent;
   padding: 16px 0 17px;
   // width: 100%;
-  border: 3px  solid $color-default-white;
+  border: 3px solid $color-default-white;
   width: 413px;
 
   @include vp-1023 {
@@ -121,6 +128,15 @@
     padding-right: 30px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    // min-width: 290px;
+    min-width: 100%;
+    padding-right: 0;
+    margin-top: 3px;
+    // background-color: red;
+    // min-width: none;
+    // max-width: 10px;
+    // width: 10px;
+  }
 }
 
