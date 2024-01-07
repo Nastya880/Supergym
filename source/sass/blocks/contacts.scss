@@ -10,13 +10,13 @@
 
   @include vp-1023 {
     margin: 0;
-    padding: 62px 179px 70px 148px;
+    padding: 61px 179px 63px 148px;
     max-width: none;
     width: 100%;
   }
 
   @include vp-767 {
-    padding: 63px 13px 69px 15px;
+    padding: 63px 13px 63px 15px;
   }
 }
 .contacts h2 {
@@ -65,18 +65,15 @@
 
   @include vp-1023 {
     margin-left: 0;
-    gap: 21px;
+    gap: 20px;
+    justify-self: start;
   }
 
   @include vp-767 {
     gap: 20px;
-    justify-self: start;
   }
 }
 
-.contacts__list-connect {
-
-}
 .contacts__list-about {
   @include vp-1023 {
     position: relative;
@@ -95,6 +92,7 @@
 
   @include vp-1023 {
     font-size: 20px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {
@@ -121,7 +119,7 @@
   margin-bottom: 1.5px;
 
   @include vp-1023 {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {

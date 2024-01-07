@@ -21,4 +21,8 @@
   width: 50%;
   height: 1px;
   background-color: $color-light-slate-grey;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
