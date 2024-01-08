@@ -56,7 +56,6 @@
             <picture>
               <source media="(max-width: 1023px)" type="image/jpg" srcset="img/intro-trainer-tablet.jpg 1x, img/intro-trainer-tablet@2x.jpg 2x">
               <source media="(max-width: 1023px)" type="image/webp" srcset="img/intro-trainer-tablet.webp 1x, img/intro-trainer-tablet@2x.webp 2x">
-
               <source type="image/webp" srcset="img/intro-trainer.webp 1x, img/intro-trainer@2x.webp 2x">
               <img src="img/intro-trainer.jpg" srcset="img/intro-trainer@2x.jpg 2x" width="500" height="556" alt="фотография тренера">
             </picture>
@@ -97,7 +96,7 @@
           </div>
         </section>
 
-        <section class="tickets">
+        <section class="tickets" id="tickets">
           <div class="tickets__container container" data-tabs="parent">
             <h2>Абонементы</h2>
             <div class="tickets__controls-wrapper">
@@ -117,131 +116,7 @@
               <div class="tickets__controls-line"></div>
             </div>
 
-            <!-- ul class="tickets__content" data-tabs="content">
-              <li class="tickets__element" data-tabs="element">
-                <ul class="tickets__content-list">
-                  <li class="tickets__content-item">
-                    <h3>С&nbsp;тренером</h3>
-                    <p>12&nbsp;занятий</p>
-                    <div class="tickets__content-price">
-                      <p>5000</p>
-                      <p>5000
-                        <span>
-                          <svg width="30" height="42">
-                            <use href="img/sprite.svg#rub"></use>
-                          </svg>
-                        </span>
-                      </p>
-                    </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
-                  </li> -->
-
-            <ul class="tickets__content-list" data-tabs="content">
-              <li class="tickets__element" data-tabs="element">
-                <div class="tickets__element-wrapper">
-                  <h3>С&nbsp;тренером</h3>
-                  <p>12 занятий</p>
-
-                  <div class="tickets__element-price">
-                    <p>5000</p>
-                    <p>5000
-                      <span>
-                        <svg width="30" height="42">
-                          <use href="img/sprite.svg#rub"></use>
-                        </svg>
-                      </span>
-                    </p>
-                  </div>
-                  <a href="#" class="tickets__element-button button" aria-label="Купить абонемент">Купить абонемент</a>
-                </div>
-                <div class="tickets__element-wrapper">
-                  <h3>С&nbsp;тренером</h3>
-                  <p>12 занятий</p>
-
-                  <div class="tickets__element-price">
-                    <p>5000</p>
-                    <p>5000
-                      <span>
-                        <svg width="30" height="42">
-                          <use href="img/sprite.svg#rub"></use>
-                        </svg>
-                      </span>
-                    </p>
-                  </div>
-                  <a href="#" class="tickets__element-button button" aria-label="Купить абонемент">Купить абонемент</a>
-                </div>
-                <div class="tickets__element-wrapper">
-                  <h3>С&nbsp;тренером</h3>
-                  <p>12 занятий</p>
-
-                  <div class="tickets__element-price">
-                    <p>5000</p>
-                    <p>5000
-                      <span>
-                        <svg width="30" height="42">
-                          <use href="img/sprite.svg#rub"></use>
-                        </svg>
-                      </span>
-                    </p>
-                  </div>
-                  <a href="#" class="tickets__element-button button" aria-label="Купить абонемент">Купить абонемент</a>
-                </div>
-              </li>
-              <ul class="subscription__tab-list" data-tabs="element">
-                <li class="tickets__content-item">
-                  <dl>
-                    <dt>С&nbsp;тренером</dt>
-                    <dd>72 занятия</dd>
-                  </dl>
-                  <p data-text="25000">25000 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-                <li class="tickets__content-item">
-                  <dl>
-                    <dt>Дневной</dt>
-                    <dd>с&nbsp;8:00 до&nbsp;17:00</dd>
-                  </dl>
-                  <p data-text="1500">1500 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-                <li class="tickets__content-item">
-                  <dl>
-                    <dt>Полный день</dt>
-                    <dd>с&nbsp;8:00 до&nbsp;22:00</dd>
-                  </dl>
-                  <p data-text="2300">2300 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-              </ul>
-              <ul class="subscription__tab-list" data-tabs="element">
-                <li class="subscription__tab-item">
-                  <dl>
-                    <dt>С&nbsp;тренером</dt>
-                    <dd>120 занятий</dd>
-                  </dl>
-                  <p data-text="35000">35000 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-                <li class="subscription__tab-item">
-                  <dl>
-                    <dt>Дневной</dt>
-                    <dd>с&nbsp;8:00 до&nbsp;17:00</dd>
-                  </dl>
-                  <p data-text="1000">1000 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-                <li class="subscription__tab-item">
-                  <dl>
-                    <dt>Полный день</dt>
-                    <dd>с&nbsp;8:00 до&nbsp;22:00</dd>
-                  </dl>
-                  <p data-text="2000">2000 <span>₽</span></p>
-                  <a href="#" class="btn subscription__btn">Купить абонемент</a>
-                </li>
-              </ul>
-            </ul>
-
-            <!-- <ul class="tickets__content" data-tabs="content">
+            <ul class="tickets__content" data-tabs="content">
               <li class="tickets__element" data-tabs="element">
                 <ul class="tickets__content-list">
                   <li class="tickets__content-item">
@@ -298,7 +173,7 @@
                     <h3>С&nbsp;тренером</h3>
                     <p>12&nbsp;занятий</p>
                     <div class="tickets__content-price">
-                      <p>3000</p>
+                      <p>30000</p>
                       <p>30000
                         <span>
                           <svg width="30" height="42">
@@ -313,8 +188,8 @@
                     <h3>Дневной</h3>
                     <p>с&nbsp;8:00 до&nbsp;17:00</p>
                     <div class="tickets__content-price">
-                      <p>1700</p>
-                      <p>1700
+                      <p>10200</p>
+                      <p>10200
                         <span>
                           <svg width="30" height="42">
                             <use href="img/sprite.svg#rub"></use>
@@ -328,8 +203,8 @@
                     <h3>Полный день</h3>
                     <p>с&nbsp;8:00 до&nbsp;22:00</p>
                     <div class="tickets__content-price">
-                      <p>2700</p>
-                      <p>2700
+                      <p>16200</p>
+                      <p>16200
                         <span>
                           <svg width="30" height="42">
                             <use href="img/sprite.svg#rub"></use>
@@ -348,8 +223,8 @@
                     <h3>С&nbsp;тренером</h3>
                     <p>12&nbsp;занятий</p>
                     <div class="tickets__content-price">
-                      <p>90000</p>
-                      <p>90000
+                      <p>60000</p>
+                      <p>60000
                         <span>
                           <svg width="30" height="42">
                             <use href="img/sprite.svg#rub"></use>
@@ -363,8 +238,8 @@
                     <h3>Дневной</h3>
                     <p>с&nbsp;8:00 до&nbsp;17:00</p>
                     <div class="tickets__content-price">
-                      <p>1700</p>
-                      <p>1700
+                      <p>20400</p>
+                      <p>20400
                         <span>
                           <svg width="30" height="42">
                             <use href="img/sprite.svg#rub"></use>
@@ -378,8 +253,8 @@
                     <h3>Полный день</h3>
                     <p>с&nbsp;8:00 до&nbsp;22:00</p>
                     <div class="tickets__content-price">
-                      <p>2700</p>
-                      <p>2700
+                      <p>324000</p>
+                      <p>324000
                         <span>
                           <svg width="30" height="42">
                             <use href="img/sprite.svg#rub"></use>
@@ -391,7 +266,7 @@
                   </li>
                 </ul>
               </li>
-            </ul> -->
+            </ul>
 
             <div class="tickets__picture">
               <picture>
@@ -523,15 +398,15 @@
                       <source type="image/webp" srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x">
                       <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.png 2x" width="260" height="294" alt="фотка тренера - Анна Павлова">
                     </picture>
-                    <h3>Анна Павлова</h3>
+                    <h3>Евгения Медведева</h3>
 
                     <div class="trainers__info">
-                      <h4>Анна Павлова</h4>
-                      <p>CrossFit</p>
+                      <h4>Евгения Медведева</h4>
+                      <p>Фигуристка</p>
                       <ul class="trainers__info-list">
                         <li class="trainers__info-item">Certified Level&nbsp;5 Trainer</li>
-                        <li class="trainers__info-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                        <li class="trainers__info-item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                        <li class="trainers__info-item">Победитель чемпионата России</li>
+                        <li class="trainers__info-item">Опыт&nbsp;&mdash; 20&nbsp;лет</li>
                       </ul>
                     </div>
                   </li>
@@ -541,14 +416,14 @@
                       <source type="image/webp" srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x">
                       <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.png 2x" width="260" height="294" alt="фотка тренера - Анна Павлова">
                     </picture>
-                    <h3>Анна Павлова</h3>
+                    <h3>Александра Трусова</h3>
 
                     <div class="trainers__info">
-                      <h4>Анна Павлова</h4>
-                      <p>CrossFit</p>
+                      <h4>Александра Трусова</h4>
+                      <p>Фигуристка</p>
                       <ul class="trainers__info-list">
                         <li class="trainers__info-item">Certified Level&nbsp;7 Trainer</li>
-                        <li class="trainers__info-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li class="trainers__info-item">Победитель чемпионата России</li>
                         <li class="trainers__info-item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
                       </ul>
                     </div>
@@ -559,15 +434,15 @@
                       <source type="image/webp" srcset="img/trainer-anna.webp 1x, img/trainer-anna@2x.webp 2x">
                       <img src="img/trainer-anna.jpg" srcset="img/trainer-anna@2x.png 2x" width="260" height="294" alt="фотка тренера - Анна Павлова">
                     </picture>
-                    <h3>Анна Павлова</h3>
+                    <h3>Камила Валиева</h3>
 
                     <div class="trainers__info">
-                      <h4>Анна Павлова</h4>
-                      <p>CrossFit</p>
+                      <h4>Камила Валиева</h4>
+                      <p>Фигуристка</p>
                       <ul class="trainers__info-list">
                         <li class="trainers__info-item">Certified Level&nbsp;7 Trainer</li>
-                        <li class="trainers__info-item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                        <li class="trainers__info-item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
+                        <li class="trainers__info-item">Победитель чемпионата России по фигурному катанию</li>
+                        <li class="trainers__info-item">Опыт&nbsp;&mdash; 17&nbsp;лет</li>
                       </ul>
                     </div>
                   </li>
@@ -704,25 +579,21 @@
                 <li class="feedback__item swiper-slide" tabindex="0">
                   <picture>
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/feedback-mobile.png 1x, img/feedback-mobile@2x.png 2x">
-                    <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/promo-mobile@2x.webp 2x"> -->
+                    <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
 
                     <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
                     <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
                   </picture>
-                  <!-- <div class="feedback__item-text"> -->
-                    <h3>Анна Орлова</h3>
-                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                  <!-- </div> -->
+                  <h3>Анна Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
                 <li class="feedback__item swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
                     <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
                   </picture>
-                  <!-- <div class="feedback__item-text"> -->
-                    <h3>Анна Орлова 1</h3>
-                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                  <!-- </div> -->
+                  <h3>Кристина Иванова</h3>
+                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
               </ul>
             </div>
