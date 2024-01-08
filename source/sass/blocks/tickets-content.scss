@@ -18,7 +18,7 @@
   grid-template-columns: repeat(3, 360px);
   align-items: center;
   gap: 40px;
-  max-width: 1163px;
+  // max-width: 1163px;
 
   @include vp-1279 {
     grid-template-columns: repeat(2, 360px);
@@ -35,50 +35,48 @@
 
 .tickets__content-item {
   margin: 0;
-  padding: 62px 74px 55px 80px;
+  // padding: 62px 74px 55px 80px;
+  padding: 54px 0 55px;
+  border: 7px solid $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $color-default-white;
   max-width: 360px;
   min-height: 448px;
   height: 100%;
-  display: block;
-  text-align: center;
   hyphens: auto;
 
   &:hover {
-    // outline: 7px solid $color-crimson;
-    // outline-offset: -7px;
     // cursor: pointer;
-    padding: 55px 67px 48px 73px;
-    border: 7px solid  $color-crimson;
     border-image: $blue-to-red-linear;
     border-image-slice: 1;
-
-    @include vp-1023 {
-      padding: 50px 103px 55px;
-    }
-    @include vp-767 {
-      padding: 45px 51px 0;
-    }
   }
 
   @include vp-1023 {
     max-width: 442px;
     width: 442px;
     min-height: 448px;
-    padding: 57px 110px 62px;
+    padding: 50px 0 55px;
   }
 
   @include vp-767 {
     margin-top: 1px;
     max-width: 290px;
     min-height: 384px;
-    padding: 52px 58px 0;
+    padding: 45px 0 0;
   }
 }
 
 .tickets__content-item h3 {
   @include font($ff-roboto, 700, 26px, $color-sapphire, 152.344%);
   margin: 0;
+  margin-left: 7px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-bottom: 1px;
+  }
 
   @include vp-767 {
     font-size: 22px;
@@ -88,10 +86,11 @@
 
 .tickets__content-item p:first-of-type {
   @include font($ff-roboto, 400, 16px, $color-chambray, 150%);
-  margin: 4px 0 11px;
+  margin: 4px 0 11px 7px;
 
   @include vp-1023 {
     margin-bottom: 12px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -102,6 +101,11 @@
 .tickets__content-price {
   position: relative;
   margin-bottom: 33px;
+  max-width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-items: center;
+  // align-items: center;
 
   @include vp-767 {
     margin-bottom: 29px;
@@ -115,37 +119,55 @@
   }
 }
 
-.tickets__content-price p:last-of-type {
-  @include font($ff-roboto, 700, 60px, $color-egyptian-blue, 150%);
-  padding: 0;
-  position: absolute;
-  top: -5px;
-  left: 19px;
-
-  @include vp-1023 {
-    left: 28px;
-  }
-
-  @include vp-767 {
-    font-size: 48px;
-    top: -2px;
-    left: 23px;
-  }
-}
-
 .tickets__content-price p:first-of-type {
   @include font($ff-roboto, 700, 100px, $color-whisper, 150%);
   margin: 0;
+  max-width: 100%;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @include vp-767 {
     font-size: 80px;
   }
 }
 
+
+.tickets__content-price p:last-of-type {
+  @include font($ff-roboto, 700, 60px, $color-egyptian-blue, 150%);
+  padding: 0;
+  position: absolute;
+  top: -5px;
+  // left: 0px;
+  left: 10.2%;
+  max-width: 89.8%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include vp-1023 {
+    left: 18px;
+    top: -6px;
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    top: -3px;
+    left: 16px;
+  }
+}
+
+
+// .tickets__content-price span {
+//   // position: absolute;
+// }
+
 .tickets__element-button {
   color: $color-sapphire;
+  margin-left: 5px;
   outline: 2px solid $color-sapphire;
-  margin-top: -5px;
+  margin-top: -4px;
   outline-offset: -1px;
   padding: 26px 45px 24px 44px;
   display: inline-block;
@@ -157,15 +179,16 @@
   }
 
   @include vp-1023 {
-    margin-top: -4px;
+    margin-left: 0;
+    margin-top: -5px;
     padding-top: 25px;
     padding-bottom: 25px;
     outline-offset: -1px;
   }
 
   @include vp-767 {
-    margin-top: -1px;
-    margin-left: -16.5px;
+    margin-top: -2px;
+    // margin-left: 0px;
     width: 206px;
     outline-offset: -1px;
   }
