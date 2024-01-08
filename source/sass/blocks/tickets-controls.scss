@@ -15,6 +15,9 @@
     padding-right: 0;
   }
 
+  @include vp-1023 {
+    padding-right: 54px;
+  }
   @include vp-767 {
     padding-right: 45px;
 
@@ -30,11 +33,24 @@
 
   &.is-active {
     padding-bottom: 10px;
-    border-bottom: 2px solid  $color-crimson;
+    border-bottom: 2px solid $color-crimson;
+  }
+
+  @include vp-1023 {
+    font-size: 18px;
+
+    &.is-active {
+      padding-bottom: 12px;
+    }
   }
 
   @include vp-767 {
     font-size: 16px;
+
+    &.is-active {
+      padding-bottom:11px;
+      border-bottom: 2px solid $color-crimson;
+    }
   }
 }
 
@@ -62,4 +78,12 @@
   background-color: rgba($color-grey, 0.20);
   position: absolute;
   bottom: 1px;
+
+  @include vp-1023 {
+    bottom: 2px;
+  }
+
+  @include vp-767 {
+    bottom: 0;
+  }
 }

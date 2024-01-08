@@ -1,10 +1,10 @@
 .super-games .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 123px 103px 52px;
+  padding: 122px 103px 52px;
 
   @include vp-1023 {
-    padding: 101px 45px 50px;
+    padding: 99px 45px 50px;
   }
 
   @include vp-767 {

@@ -2307,7 +2307,7 @@ button,
 }
 
 .gym__container {
-  padding: 118px 103px 235px 162px;
+  padding: 119px 103px 235px 162px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 355px auto;
@@ -2449,8 +2449,8 @@ button,
 
 .gym__video {
   position: absolute;
-  top: 72%;
-  left: -9.5%;
+  top: 72.2%;
+  left: -9.4%;
   width: 364px;
   height: 228px;
 }
@@ -2590,13 +2590,14 @@ button,
 @media (max-width: 1023px) {
   .tickets h2 {
     font-size: 42px;
+    margin-bottom: 2px;
   }
 }
 @media (max-width: 767px) {
   .tickets h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 }
 
@@ -2666,7 +2667,7 @@ button,
 }
 @media (max-width: 767px) {
   .tickets__content-list {
-    gap: 35px;
+    gap: 34px;
   }
 }
 
@@ -2691,7 +2692,7 @@ button,
 }
 @media (max-width: 1023px) {
   .tickets__content-item:hover {
-    padding: 57px 103px 55px;
+    padding: 50px 103px 55px;
   }
 }
 @media (max-width: 767px) {
@@ -2704,11 +2705,12 @@ button,
     max-width: 442px;
     width: 442px;
     min-height: 448px;
-    padding: 59px 110px 62px;
+    padding: 56px 110px 62px;
   }
 }
 @media (max-width: 767px) {
   .tickets__content-item {
+    margin-top: 1px;
     max-width: 290px;
     min-height: 384px;
     padding: 52px 58px 0;
@@ -2809,7 +2811,7 @@ button,
   outline: 2px solid #102654;
   margin-top: -5px;
   outline-offset: -1px;
-  padding: 26px 45px 26px 44px;
+  padding: 26px 45px 24px 44px;
   display: inline-block;
 }
 .tickets__element-button:hover {
@@ -2819,18 +2821,18 @@ button,
 }
 @media (max-width: 1023px) {
   .tickets__element-button {
-    margin-top: -6px;
-    padding-top: 27px;
-    padding-bottom: 28px;
-    outline-offset: -3px;
+    margin-top: -4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    outline-offset: -1px;
   }
 }
 @media (max-width: 767px) {
   .tickets__element-button {
-    margin-top: -3px;
+    margin-top: -1px;
     margin-left: -16.5px;
     width: 206px;
-    outline-offset: -2px;
+    outline-offset: -1px;
   }
 }
 
@@ -2851,6 +2853,11 @@ button,
 }
 .tickets__control-item:last-child {
   padding-right: 0;
+}
+@media (max-width: 1023px) {
+  .tickets__control-item {
+    padding-right: 54px;
+  }
 }
 @media (max-width: 767px) {
   .tickets__control-item {
@@ -2873,9 +2880,21 @@ button,
   padding-bottom: 10px;
   border-bottom: 2px solid #d10a42;
 }
+@media (max-width: 1023px) {
+  .tickets__control-button {
+    font-size: 18px;
+  }
+  .tickets__control-button.is-active {
+    padding-bottom: 12px;
+  }
+}
 @media (max-width: 767px) {
   .tickets__control-button {
     font-size: 16px;
+  }
+  .tickets__control-button.is-active {
+    padding-bottom: 11px;
+    border-bottom: 2px solid #d10a42;
   }
 }
 
@@ -2905,6 +2924,16 @@ button,
   background-color: rgba(120, 120, 120, 0.2);
   position: absolute;
   bottom: 1px;
+}
+@media (max-width: 1023px) {
+  .tickets__controls-line {
+    bottom: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__controls-line {
+    bottom: 0;
+  }
 }
 
 [data-tabs=parent] {
@@ -2987,11 +3016,11 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
-  padding: 123px 103px 52px;
+  padding: 122px 103px 52px;
 }
 @media (max-width: 1023px) {
   .super-games .container {
-    padding: 101px 45px 50px;
+    padding: 99px 45px 50px;
   }
 }
 @media (max-width: 767px) {
@@ -5041,7 +5070,7 @@ button,
   .footer__menu-item.footer__menu-item--logo {
     margin-top: 0px;
     margin-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
   }
 }
 
@@ -5112,14 +5141,7 @@ button,
 @media (max-width: 767px) {
   .footer__menu-item {
     margin-right: 0;
-    margin-bottom: 18px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer__menu-item--services {
-    margin-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 22px;
   }
 }
 

@@ -29,7 +29,7 @@
   }
 
   @include vp-767 {
-    gap: 35px;
+    gap: 34px;
   }
 }
 
@@ -49,13 +49,12 @@
     // outline-offset: -7px;
     // cursor: pointer;
     padding: 55px 67px 48px 73px;
-
     border: 7px solid  $color-crimson;
     border-image: $blue-to-red-linear;
     border-image-slice: 1;
 
     @include vp-1023 {
-      padding: 57px 103px 55px;
+      padding: 50px 103px 55px;
     }
     @include vp-767 {
       padding: 45px 51px 0;
@@ -66,10 +65,11 @@
     max-width: 442px;
     width: 442px;
     min-height: 448px;
-    padding: 59px 110px 62px;
+    padding: 56px 110px 62px;
   }
 
   @include vp-767 {
+    margin-top: 1px;
     max-width: 290px;
     min-height: 384px;
     padding: 52px 58px 0;
@@ -147,7 +147,7 @@
   outline: 2px solid $color-sapphire;
   margin-top: -5px;
   outline-offset: -1px;
-  padding: 26px 45px 26px 44px;
+  padding: 26px 45px 24px 44px;
   display: inline-block;
 
   &:hover {
@@ -155,17 +155,18 @@
     outline: none;
     color: $color-default-white;
   }
+
   @include vp-1023 {
-    margin-top: -6px;
-    padding-top: 27px;
-    padding-bottom: 28px;
-    outline-offset: -3px;
+    margin-top: -4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    outline-offset: -1px;
   }
 
   @include vp-767 {
-    margin-top: -3px;
+    margin-top: -1px;
     margin-left: -16.5px;
     width: 206px;
-    outline-offset: -2px;
+    outline-offset: -1px;
   }
 }
