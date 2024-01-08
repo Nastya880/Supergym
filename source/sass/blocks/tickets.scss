@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   padding: 122px 98px 120px 93px;
-  position: relative;
+  // position: relative;
   @include vp-1023 {
     padding: 100px 163px;
   }
@@ -36,20 +36,23 @@
   }
 }
 
-.tickets img {
-  display: block;
-  // width: 321px;
-  // height: 384px;
+.tickets__picture {
+  // background-color: inherit;
   position: absolute;
-  bottom: -80px;
-  right: -100px;
+  right: 0;
+  bottom: -153px;
 
   @include vp-1023 {
-    width: 289px;
-    height: 345px;
+    bottom: -126px;
   }
 
   @include vp-767 {
     display: none;
   }
+}
+
+.tickets__picture img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
