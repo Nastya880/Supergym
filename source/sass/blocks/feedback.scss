@@ -72,6 +72,11 @@
   }
 }
 
+.feedback__item img {
+  background-color: $color-grey;
+  border-radius: 50%;
+}
+
 .feedback__item h3 {
   @include font($ff-roboto, 700, 20px, $color-default-white, 150%);
   margin: -8px 0 12px 0;

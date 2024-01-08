@@ -36,6 +36,7 @@
 
 .gym__video img,
 .gym__video.is-active iframe {
+  background-color: $color-cobalt-first;
   height: 228px;
   position: absolute;
   width: 100%;

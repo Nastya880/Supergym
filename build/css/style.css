@@ -2297,6 +2297,7 @@ button,
 }
 
 .intro img {
+  background-color: #2e35ac;
   margin-top: -22px;
   min-width: 64.5%;
 }
@@ -2438,6 +2439,7 @@ button,
 }
 
 .gym__img-wrapper img {
+  background-color: #b6bdcc;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2493,6 +2495,7 @@ button,
 
 .gym__video img,
 .gym__video.is-active iframe {
+  background-color: #003EB7;
   height: 228px;
   position: absolute;
   width: 100%;
@@ -3237,6 +3240,7 @@ button,
 }
 
 .super-games img {
+  background-color: #102654;
   min-height: 500px;
   height: 100%;
   width: 100%;
@@ -3443,6 +3447,7 @@ button,
 }
 
 .trainers__item img {
+  background-color: #787878;
   position: absolute;
   top: 0;
   -o-object-fit: cover;
@@ -3476,7 +3481,6 @@ button,
   left: -63px;
 }
 .trainers__content-button--prev:hover {
-  stroke: red;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -3502,20 +3506,17 @@ button,
   display: none;
 }
 
-.trainers__item:hover,
-.trainers__item:focus-within {
+.trainers__item:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
 }
-.trainers__item:hover h3,
-.trainers__item:focus-within h3 {
+.trainers__item:hover h3 {
   display: none;
 }
-.trainers__item:hover .trainers__info,
-.trainers__item:focus-within .trainers__info {
+.trainers__item:hover .trainers__info {
   max-height: 100%;
   overflow: auto;
   display: block;
@@ -4213,6 +4214,7 @@ button,
 }
 
 .promo__description-wrapper img {
+  background-color: #0041ca;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4506,6 +4508,11 @@ button,
     width: 68px;
     height: 68px;
   }
+}
+
+.feedback__item img {
+  background-color: #787878;
+  border-radius: 50%;
 }
 
 .feedback__item h3 {

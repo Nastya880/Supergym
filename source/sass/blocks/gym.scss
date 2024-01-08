@@ -94,6 +94,7 @@
 }
 
 .gym__img-wrapper img {
+  background-color: $color-spindle;
   object-fit: cover;
 
   @include vp-1023 {

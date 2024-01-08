@@ -82,6 +82,7 @@
 }
 
 .trainers__item img {
+  background-color: $color-grey;
   position: absolute;
   top: 0;  object-fit: cover;
   width: 100%;
@@ -113,8 +114,6 @@
   left: -63px;
 
   &:hover {
-    stroke: red;
-
     cursor: pointer;
   }
 
@@ -139,8 +138,7 @@
   display: none;
 }
 
-.trainers__item:hover,
-.trainers__item:focus-within {
+.trainers__item:hover {
   flex-direction: column;
   padding: 0;
 
