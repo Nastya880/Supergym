@@ -18,7 +18,10 @@
 }
 
 .promo__item-wrapper {
-  border: 7px solid #D10A42;
+  border: 7px solid  $color-crimson;
+  border-image: $blue-to-red-linear;
+  border-image-slice: 1;
+
   padding: 21px 35px 28px 28px;
   display: flex;
   flex-direction: column;

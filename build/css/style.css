@@ -2679,13 +2679,25 @@ button,
   height: 100%;
   display: block;
   text-align: center;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 .tickets__content-item:hover {
-  outline: 7px solid #d10a42;
-  outline-offset: -7px;
+  padding: 55px 67px 48px 73px;
+  border: 7px solid #d10a42;
+  -o-border-image: linear-gradient(143deg, #d10a42 0%, #003EB7 87.33%);
+     border-image: linear-gradient(143deg, #d10a42 0%, #003EB7 87.33%);
+  border-image-slice: 1;
+}
+@media (max-width: 1023px) {
+  .tickets__content-item:hover {
+    padding: 57px 103px 55px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__content-item:hover {
+    padding: 45px 51px 0;
+  }
 }
 @media (max-width: 1023px) {
   .tickets__content-item {
@@ -3058,9 +3070,8 @@ button,
   margin-top: -7px;
   margin-bottom: 3px;
   max-width: 100%;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 @media (max-width: 1023px) {
   .super-games__info-wrapper {
@@ -4250,7 +4261,10 @@ button,
 }
 
 .promo__item-wrapper {
-  border: 7px solid #D10A42;
+  border: 7px solid #d10a42;
+  -o-border-image: linear-gradient(143deg, #d10a42 0%, #003EB7 87.33%);
+     border-image: linear-gradient(143deg, #d10a42 0%, #003EB7 87.33%);
+  border-image-slice: 1;
   padding: 21px 35px 28px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5098,8 +5112,14 @@ button,
 @media (max-width: 767px) {
   .footer__menu-item {
     margin-right: 0;
-    margin-bottom: 17px;
-    margin-top: 0;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__menu-item--services {
+    margin-right: 0;
+    margin-bottom: 14px;
   }
 }
 
