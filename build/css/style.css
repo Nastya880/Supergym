@@ -2471,7 +2471,7 @@ button,
   .gym__video {
     max-width: 267px;
     height: 167px;
-    top: 75.5%;
+    top: 76%;
     left: 30.3%;
   }
 }
@@ -2535,7 +2535,7 @@ button,
     width: 72px;
     height: 72px;
     background-size: 100% 100%;
-    top: 28.5%;
+    top: 27.6%;
   }
 }
 @media (max-width: 767px) {
@@ -2608,7 +2608,7 @@ button,
 }
 @media (max-width: 1023px) {
   .tickets__picture {
-    bottom: -126px;
+    bottom: -124px;
   }
 }
 @media (max-width: 767px) {
@@ -2705,7 +2705,7 @@ button,
     max-width: 442px;
     width: 442px;
     min-height: 448px;
-    padding: 56px 110px 62px;
+    padding: 57px 110px 62px;
   }
 }
 @media (max-width: 767px) {
@@ -4559,7 +4559,7 @@ button,
 }
 @media (max-width: 1023px) {
   .feedback__button--prev {
-    top: 61.2%;
+    top: 50.4%;
     left: 37px;
   }
 }
@@ -4582,7 +4582,7 @@ button,
 }
 @media (max-width: 1023px) {
   .feedback__button--next {
-    top: 61.2%;
+    top: 50.4%;
     right: 37px;
   }
 }
@@ -4638,6 +4638,11 @@ button,
   padding-top: 57px;
   padding-bottom: 59px;
   max-width: 616px;
+}
+@media (max-width: 1179px) {
+  .contacts__container {
+    padding-left: 5%;
+  }
 }
 @media (max-width: 1023px) {
   .contacts__container {
@@ -4836,6 +4841,16 @@ button,
   margin-right: 171px;
   max-width: 410px;
   width: 100%;
+}
+@media (max-width: 1279px) {
+  .form__container {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1179px) {
+  .form__container {
+    margin-right: 70px;
+  }
 }
 @media (max-width: 1023px) {
   .form__container {
@@ -5116,15 +5131,15 @@ button,
 @media (max-width: 767px) {
   .footer__menu-list {
     display: block;
-    width: 100%;
-    height: 120px;
+    width: auto;
+    max-width: 100%;
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    margin-bottom: 17px;
+    -webkit-column-gap: 75px;
+       -moz-column-gap: 75px;
+            column-gap: 75px;
+    margin-bottom: 11px;
   }
 }
 
@@ -5160,6 +5175,12 @@ button,
 
 .footer__menu-item--schedule {
   margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .footer__menu-item--tickets {
+    margin-bottom: 29px;
+  }
 }
 
 .footer__social-list {

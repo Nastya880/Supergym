@@ -8,6 +8,10 @@
   padding-bottom: 59px;
   max-width: 616px;
 
+  @include vp-1179 {
+    padding-left: 5%;
+  }
+
   @include vp-1023 {
     margin: 0;
     padding: 61px 179px 63px 148px;

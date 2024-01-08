@@ -12,11 +12,14 @@
 
   @include vp-767 {
     display: block;
-    width: 100%;
-    height: 120px;
+    width: auto;
+    max-width: 100%;
+//     // width: auto;
+//     // align-self: start;
+    // height: 120px;
     column-count: 2;
-    column-gap: 30px;
-    margin-bottom: 17px;
+    column-gap: 75px;
+    margin-bottom: 11px;
   }
 }
 
@@ -46,4 +49,12 @@
 
 .footer__menu-item--schedule {
   margin-right: 0;
+}
+
+.footer__menu-item--tickets {
+  // margin-right: 0;
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
