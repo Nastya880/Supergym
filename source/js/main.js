@@ -1,8 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+// import {Form} from './modules/form-validate/form';
 import {showVideo} from './modules/showVideo';
-import {initTabs} from './modules/tabs/init-tabs';
+import {initTabs} from './modules/tabs/initTabs';
 import {initSwiperTrainers} from './modules/initSwiperTrainers';
 import {initSwiperFeedback} from './modules/initSwiperFeedback';
 
@@ -25,10 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwiperTrainers();
     initSwiperFeedback();
-    initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    // const form = new Form();
+    // window.form = form;
+    // form.init();
   });
 });
 
