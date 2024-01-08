@@ -1,7 +1,6 @@
 .tickets {
   background-color: $color-ghost-white;
   position: relative;
-  // overflow: hidden;
 }
 
 .tickets__container {
@@ -9,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   padding: 122px 98px 120px 93px;
-  // position: relative;
+
   @include vp-1023 {
     padding: 100px 163px;
   }
@@ -38,7 +37,6 @@
 }
 
 .tickets__picture {
-  // background-color: inherit;
   position: absolute;
   right: 0;
   bottom: -153px;

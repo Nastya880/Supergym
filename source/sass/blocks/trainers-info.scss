@@ -1,6 +1,5 @@
 .trainers__info {
-  // padding: 58px 57px;
-  background-color: rgba(16, 38, 84, 0.89);
+  background-color: rgba($color-sapphire, 0.89);
   width: 100%;
   padding: 0;
   height: 100%;
@@ -27,11 +26,7 @@
 .trainers__info p {
   @include font($ff-roboto, 400, 16px, $color-spindle, 150%);
   text-align: center;
-  margin: 0;
-  // padding: 0;
-  margin-top: -3px;
-  margin-bottom: 33px;
-  margin-left: 0;
+  margin: -3px 0 33px;
 
   @include vp-1023 {
     margin-left: -7px;
@@ -44,14 +39,6 @@
 
 .trainers__info-list {
   list-style: none;
-  // list-style-type: disc;
-  // display: flex;
-  // flex-direction: column;
-  // // justify-items: center;
-  // // align-items: center;
-  // width: 100%;
-  // list-style: upper-roman;
-  // list-style-position: inside;
 }
 
 

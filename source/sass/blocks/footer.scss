@@ -22,9 +22,6 @@
 .footer__menu-item.footer__menu-item--logo {
   margin-right: auto;
   margin-top: 0;
-  // justify-self: flex-start;
-  // max-width: 35%;
-  // margin-right: 300px;
 
   @include vp-1023 {
     margin-top: -9px;
@@ -46,11 +43,9 @@
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.48px;
-    // margin-top: -6px;
   }
 
   @include vp-767 {
-    // display: block;
     font-size: 20px;
     letter-spacing: 0.4px;
   }

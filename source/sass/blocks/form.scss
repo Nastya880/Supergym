@@ -3,11 +3,10 @@
 
   @include vp-1023 {
     justify-self: center;
-    // align-self: center;
     width: 100%;
     background-color: $color-sapphire;
-    // margin: 0 auto;
   }
+
   @include vp-767 {
     justify-self: start;
   }
@@ -29,7 +28,6 @@
   }
 
   @include vp-1023 {
-    // margin: 0 auto;
     margin: 0;
     padding: 61px 148px 69px 147px;
     max-width: none;
@@ -37,7 +35,6 @@
 
   @include vp-767 {
     padding: 63px 13px 69px 15px;
-    // padding: 0;
   }
 }
 
@@ -46,13 +43,13 @@
   letter-spacing: 1.62px;
   margin: 0;
   margin-bottom: 20px;
-  letter-spacing: 2.4px; ////// PP ---- ??
+  letter-spacing: 2.4px; // PP
 
   @include vp-1023 {
     font-size: 42px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.56px;  ///// PP
+    letter-spacing: 1.56px;  // PP
     margin-bottom: 35px;
   }
 
@@ -80,7 +77,7 @@
   }
 
   @include vp-767 {
-    gap: 0;
+    column-gap: 0;
     row-gap: 35px;
     min-width: 100%;
     grid-template-areas: "name-form" "phone-form" "btn";
@@ -112,9 +109,6 @@
 
 .form input::placeholder {
   @include font($ff-roboto, 400, 14px, $color-default-white, normal);
-
-  @include vp-1023 {}
-  @include vp-767 {}
 }
 
 
@@ -125,26 +119,19 @@
   text-transform: uppercase;
   background-color: transparent;
   padding: 16px 0 17px;
-  // width: 100%;
   border: 3px solid $color-default-white;
   width: 413px;
 
   @include vp-1023 {
     min-width: 474px;
     width: 100%;
-    // text-align: center;
     padding-right: 30px;
   }
 
   @include vp-767 {
-    // min-width: 290px;
     min-width: 100%;
     padding-right: 0;
     margin-top: 3px;
-    // background-color: red;
-    // min-width: none;
-    // max-width: 10px;
-    // width: 10px;
   }
 }
 

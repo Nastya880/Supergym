@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-
   position: relative;
   z-index: 1;
 }
@@ -18,7 +17,6 @@
   grid-template-columns: repeat(3, 360px);
   align-items: center;
   gap: 40px;
-  // max-width: 1163px;
 
   @include vp-1279 {
     grid-template-columns: repeat(2, 360px);
@@ -35,7 +33,6 @@
 
 .tickets__content-item {
   margin: 0;
-  // padding: 62px 74px 55px 80px;
   padding: 54px 0 55px;
   border: 7px solid $color-default-white;
   display: flex;
@@ -70,8 +67,7 @@
 
 .tickets__content-item h3 {
   @include font($ff-roboto, 700, 26px, $color-sapphire, 152.344%);
-  margin: 0;
-  margin-left: 7px;
+  margin: 0 0 0 7px;
 
   @include vp-1023 {
     margin-left: 0;
@@ -102,10 +98,6 @@
   position: relative;
   margin-bottom: 33px;
   max-width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // justify-items: center;
-  // align-items: center;
 
   @include vp-767 {
     margin-bottom: 29px;
@@ -123,7 +115,6 @@
   @include font($ff-roboto, 700, 100px, $color-whisper, 150%);
   margin: 0;
   max-width: 100%;
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -139,7 +130,6 @@
   padding: 0;
   position: absolute;
   top: -5px;
-  // left: 0px;
   left: 10.2%;
   max-width: 89.8%;
   white-space: nowrap;
@@ -158,19 +148,14 @@
   }
 }
 
-
-// .tickets__content-price span {
-//   // position: absolute;
-// }
-
 .tickets__element-button {
+  display: inline-block;
   color: $color-sapphire;
   margin-left: 5px;
-  outline: 2px solid $color-sapphire;
   margin-top: -4px;
-  outline-offset: -1px;
   padding: 26px 45px 24px 44px;
-  display: inline-block;
+  outline: 2px solid $color-sapphire;
+  outline-offset: -1px;
 
   &:hover {
     background: $red-to-blue;
@@ -188,7 +173,6 @@
 
   @include vp-767 {
     margin-top: -2px;
-    // margin-left: 0px;
     width: 206px;
     outline-offset: -1px;
   }

@@ -20,7 +20,7 @@ $color-ghost-white:                 #f8f9fc;
 $color-egyptian-blue:               #103aae;
 $color-cobalt:                      #003EB7;
 $color-resolution-blue:             #1C3374;
-$color-chambray:                    #495A7D;
+$color-chambray:                    #495a7d;
 $color-grey:                        #787878;
 $color-crimson:                     #d10a42;
 $color-black-russian:               #030a1a;
@@ -29,7 +29,8 @@ $color-grey:                        #787878;
 $color-dark-grey:                   #afafaf;
 $color-spindle:                     #b6bdcc;
 $color-persian-blue:                #2e35ac;
-$color-light-slate-grey:           #74819c;
+$color-light-slate-grey:            #74819c;
+$color-cobalt:                      #0041ca;
 
 // Gradient
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -37,8 +38,8 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 $blue-to-red-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg,$color-dark-cerulean 32.24deg,$color-venetian-red 313.31deg,$color-dark-cerulean 392.24deg);
 
 $blue-to-red-linear:                linear-gradient(143deg, $color-crimson 0%, $color-cobalt 87.33%);
+$violet-to-blue:                    linear-gradient(128deg, $color-crimson 0%, $color-cobalt 45.58%);
 $red-to-blue:                       var(--1, linear-gradient(97deg, $color-torch-red 17.6%, $color-cobalt 95.31%));
-
 // Typography
 // ---------------------------------
 

@@ -2,9 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // align-items: center;
   grid-template-rows: minmax(337px, 1fr);
-  // justify-items: end;
   background: linear-gradient(to right, $color-sapphire 50%, $color-default-white 50%);
 
   @include vp-1023 {

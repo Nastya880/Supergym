@@ -1,8 +1,6 @@
 .promo__list {
   list-style: none;
-  // height: 100%;
   display: grid;
-  // grid-template-rows: 1fr 1fr;
   gap: 40px;
   margin: 0;
   padding: 0;
@@ -21,7 +19,6 @@
   border: 7px solid  $color-crimson;
   border-image: $blue-to-red-linear;
   border-image-slice: 1;
-
   padding: 21px 35px 28px 28px;
   display: flex;
   flex-direction: column;
@@ -44,7 +41,6 @@
   @include font($ff-roboto, 700, 26px, $color-resolution-blue, 150%);
   margin: 0;
   padding: 0;
-  margin-bottom: 0px;
 
   @include vp-1023 {
     margin-bottom: 3px;
@@ -65,7 +61,6 @@
   @include font($ff-roboto, 700, 12px, $color-resolution-blue, normal);
   letter-spacing: 0.6px;
   text-transform: uppercase;
-
   display: block;
   margin-top: 10px;
   padding-bottom: 1px;
