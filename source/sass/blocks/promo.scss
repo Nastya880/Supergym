@@ -118,6 +118,11 @@
   border-bottom: 1px solid $color-default-white;
   width: min-content;
 
+  &:hover {
+    color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
   @include vp-767 {
     margin-top: 13px;
     padding-bottom: 1px;

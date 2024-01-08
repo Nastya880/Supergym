@@ -39,6 +39,11 @@
   letter-spacing: 0.78px;
   z-index: 10;
 
+  &:hover,
+  &:active {
+    color: $color-spindle;
+  }
+
   @include vp-1023 {
     font-size: 24px;
     font-weight: 700;

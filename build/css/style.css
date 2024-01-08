@@ -1467,6 +1467,9 @@ button,
   text-transform: uppercase;
   text-align: center;
 }
+.button:hover, .button:active {
+  background: var(--1, linear-gradient(97deg, #ff1553 17.6%, #0041ca 95.31%));
+}
 
 .btn {
   display: -webkit-inline-box;
@@ -2068,6 +2071,9 @@ button,
   line-height: normal;
   letter-spacing: 0.78px;
   z-index: 10;
+}
+.header__phone:hover, .header__phone:active {
+  color: #b6bdcc;
 }
 @media (max-width: 1023px) {
   .header__phone {
@@ -2689,6 +2695,7 @@ button,
   height: 100%;
   -ms-hyphens: auto;
       hyphens: auto;
+  cursor: pointer;
 }
 .tickets__content-item:hover {
   -o-border-image: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
@@ -2887,6 +2894,10 @@ button,
   border: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+}
+.tickets__control-button:hover {
+  color: #d10a42;
 }
 @media (max-width: 1023px) {
   .tickets__control-button {
@@ -2896,10 +2907,6 @@ button,
 @media (max-width: 767px) {
   .tickets__control-button {
     font-size: 16px;
-  }
-  .tickets__control-button.is-active {
-    padding-bottom: 11px;
-    border-bottom: 2px solid #d10a42;
   }
 }
 
@@ -3454,7 +3461,7 @@ button,
 }
 
 .trainers__content-button svg {
-  stroke: #afafaf;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .trainers__content-button svg {
@@ -3467,6 +3474,10 @@ button,
   position: absolute;
   top: 44%;
   left: -63px;
+}
+.trainers__content-button--prev:hover {
+  stroke: red;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .trainers__content-button--prev {
@@ -3588,7 +3599,6 @@ button,
 .trainers__info-item:before {
   content: "·";
   position: absolute;
-  font-size: 1.1em;
   font-size: 50px;
   left: -19px;
   top: 1px;
@@ -4275,6 +4285,10 @@ button,
   width: -moz-min-content;
   width: min-content;
 }
+.promo__description-text a:hover {
+  color: #1C3374;
+  border-color: #1C3374;
+}
 @media (max-width: 767px) {
   .promo__description-text a {
     margin-top: 13px;
@@ -4383,6 +4397,10 @@ button,
   border-bottom: 1px solid #1C3374;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+}
+.promo__item a:hover {
+  color: #ed0233;
+  border-color: #ed0233;
 }
 @media (max-width: 1023px) {
   .promo__item a {
@@ -4551,7 +4569,7 @@ button,
 }
 
 .feedback__button svg {
-  stroke: #afafaf;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .feedback__button svg {
@@ -4787,6 +4805,10 @@ button,
 .contacts__list-wrapper a {
     font-size: 18px;
   }
+}
+
+.contacts__list-wrapper a:hover {
+  color: #b80027;
 }
 
 .contacts__item-connect h3 {
@@ -5036,6 +5058,10 @@ button,
     -ms-grid-column-span: 1;
   }
 }
+.form button:hover, .form button:active {
+  cursor: pointer;
+  background: var(--1, linear-gradient(97deg, #ff1553 17.6%, #0041ca 95.31%));
+}
 @media (max-width: 1023px) {
   .form button {
     min-width: 474px;
@@ -5180,6 +5206,9 @@ button,
   color: #ffffff;
   line-height: normal;
 }
+.footer__menu-item a:hover {
+  color: #e8e8e8;
+}
 @media (max-width: 767px) {
   .footer__menu-item a {
     font-size: 16px;
@@ -5238,6 +5267,9 @@ button,
 
 .footer__social-item svg {
   fill: #ffffff;
+}
+.footer__social-item svg:hover {
+  fill: #e8e8e8;
 }
 
 /* @mixin hover-focus {

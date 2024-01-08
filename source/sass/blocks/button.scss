@@ -3,6 +3,11 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover,
+  &:active {
+    background: $red-to-blue;
+  }
 }
 
 .btn {

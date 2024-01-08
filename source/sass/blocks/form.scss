@@ -122,6 +122,12 @@
   border: 3px solid $color-default-white;
   width: 413px;
 
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background: $red-to-blue;
+  }
+
   @include vp-1023 {
     min-width: 474px;
     width: 100%;

@@ -67,6 +67,11 @@
   border-bottom: 1px solid $color-resolution-blue;
   align-self: baseline;
 
+  &:hover {
+    color: $color-torch-red-bg;
+    border-color: $color-torch-red-bg;
+  }
+
   @include vp-1023 {
     padding-bottom: 2px;
   }
