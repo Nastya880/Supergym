@@ -34,7 +34,17 @@
       <div class="wrapper__intro">
         <header>
           <div class="header__container container">
-            <a class="header__logo" href="#" aria-label="логотип SUPERGYM">SUPERGYM</a>
+            <a class="header__logo" href="#" aria-label="логотип SUPERGYM">
+              <picture>
+                <source media="(max-width: 767px)" type="image/png" srcset="img/supergym-mobile.png 1x, img/supergym-mobile@2x.png 2x">
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/supergym-mobile.webp 1x, img/supergym-mobile@2x.webp 2x">
+
+                <source media="(max-width: 1023px)" type="image/png" srcset="img/supergym-tablet.png 1x, img/supergym-tablet@2x.png 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/supergym-tablet.webp 1x, img/supergym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/supergym.webp 1x, img/supergym@2x.webp 2x">
+                <img src="img/supergym.png" srcset="img/supergym@2x.png 2x" width="122" height="44" alt="логотип SUPERGYM">
+              </picture>
+            </a>
             <a class="header__phone" href="tel:88005555555" aria-label="88005555555">8-800-555-55-55</a>
           </div>
         </header>
@@ -64,7 +74,7 @@
       </div>
 
       <main>
-        <section class="gym">
+        <section class="gym" id="gym">
           <div class="gym__container container">
             <div class="gym__description">
               <h2>Тренажерный зал</h2>
@@ -132,7 +142,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                   <li class="tickets__content-item">
                     <h3>Дневной</h3>
@@ -147,7 +157,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                   <li class="tickets__content-item">
                     <h3>Полный день</h3>
@@ -162,7 +172,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                 </ul>
               </li>
@@ -182,7 +192,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                   <li class="tickets__content-item">
                     <h3>Дневной</h3>
@@ -197,7 +207,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                   <li class="tickets__content-item">
                     <h3>Полный день</h3>
@@ -212,7 +222,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                 </ul>
               </li>
@@ -232,7 +242,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                   <li class="tickets__content-item">
                     <h3>Дневной</h3>
@@ -262,7 +272,7 @@
                         </span>
                       </p>
                     </div>
-                    <a class="tickets__element-button button" href="#">купить абонемент</a>
+                    <a class="tickets__element-button button" href="#" aria-label="купить абонемент">купить абонемент</a>
                   </li>
                 </ul>
               </li>
@@ -302,7 +312,7 @@
                 </div>
               </div>
               <h4>Ежегодные соревнования по&nbsp;CrossFit</h4>
-              <a class="super-games__button button" href="#">заполнить заявку</a>
+              <a class="super-games__button button" href="#" aria-label="заполнить заявку">заполнить заявку</a>
             </div>
             <picture>
               <source media="(max-width: 767px)" type="image/jpg" srcset="img/super-games-mobile.jpg 1x, img/super-games-mobile@2x.jpg 2x">
@@ -314,7 +324,7 @@
           </div>
         </section>
 
-        <section class="trainers">
+        <section class="trainers" id="trainers">
           <div class="trainers__container container">
             <h2>Тренеры</h2>
 
@@ -522,7 +532,7 @@
             </ul>
           </div>
         </section>
-        <section class="promo">
+        <section class="promo" id="promo">
           <div class="promo__container container">
             <h2>Акции</h2>
             <div class="promo__description">
@@ -570,48 +580,46 @@
             </div>
           </div>
         </section>
+
         <section class="feedback">
-          <div class="feedback__container container">
+          <div class="feedback__container container" data-swiper="feedback">
             <h2>Отзывы</h2>
             <div class="feedback__swiper swiper" data-swiper="feedback">
-
               <ul class="feedback__list swiper-wrapper">
-                <li class="feedback__item swiper-slide" tabindex="0">
+                <li class="feedback__item swiper-slide">
                   <picture>
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/feedback-mobile.png 1x, img/feedback-mobile@2x.png 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
-
+                    <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
-                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
+                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой">
                   </picture>
                   <h3>Анна Орлова</h3>
                   <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
-                <li class="feedback__item swiper-slide" tabindex="0">
+                <li class="feedback__item swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
-                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой 1">
+                    <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Кристины Ивановой">
                   </picture>
                   <h3>Кристина Иванова</h3>
-                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  <p>&laquo;Хожу в&nbsp;Supergym около года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo; За то время, что хожу - вижу результат</p>
                 </li>
               </ul>
             </div>
-            <button class="feedback__button feedback__button--prev" data-swiper-feedback-button="prev" type="button" aria-label="Посмотреть предыдущий слайд">
-              <svg width="18" height="34">
-                <use href="./img/sprite.svg#arrow-left"></use>
-              </svg>
-            </button>
-
-            <button class="feedback__button feedback__button--next" data-swiper-feedback-button="next" type="button" aria-label="Посмотреть следующий слайд">
-              <svg width="18" height="34">
-                <use href="./img/sprite.svg#arrow-right"></use>
-              </svg>
-            </button>
           </div>
+          <button class="feedback__button feedback__button--prev" data-swiper-feedback-button="prev" type="button" aria-label="Посмотреть предыдущий слайд">
+            <svg width="18" height="34">
+              <use href="./img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <button class="feedback__button feedback__button--next" data-swiper-feedback-button="next" type="button" aria-label="Посмотреть следующий слайд">
+            <svg width="18" height="34">
+              <use href="./img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
         </section>
 
-        <div class="connection__wrapper ">
+        <div class="connection__wrapper">
           <section class="form">
             <div class="form__container">
               <h2>Бесплатное занятие</h2>
@@ -659,19 +667,29 @@
         <div class="footer__container container">
           <ul class="footer__menu-list">
             <li class="footer__menu-item footer__menu-item--logo">
-              <a href="#" aria-label="логотип SUPERGYM">SUPERGYM</a>
+              <a href="#" aria-label="логотип SUPERGYM">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/png" srcset="img/logo-footer-mobile.png 1x, img/logo-footer-mobile@2x.png 2x">
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/logo-footer-mobile.webp 1x, img/logo-footer-mobile@2x.webp 2x">
+
+                  <source media="(max-width: 1023px)" type="image/png" srcset="img/logo-footer-tablet.png 1x, img/logo-footer-tablet@2x.png 2x">
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/logo-footer-tablet.webp 1x, img/logo-footer-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/logo-footer.webp 1x, img/logo-footer@2x.webp 2x">
+                  <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" width="88" height="32" alt="логотип SUPERGYM">
+                </picture>
+              </a>
             </li>
             <li class="footer__menu-item footer__menu-item--services">
-              <a href="#" aria-label="Услуги">Услуги</a>
+              <a href="#gym" aria-label="Услуги">Услуги</a>
             </li>
             <li class="footer__menu-item footer__menu-item--tickets">
-              <a href="#" aria-label="Абонементы">Абонементы</a>
+              <a href="#tickets" aria-label="Абонементы">Абонементы</a>
             </li>
             <li class="footer__menu-item footer__menu-item--promo">
-              <a href="#" aria-label="Акции">Акции</a>
+              <a href="#promo" aria-label="Акции">Акции</a>
             </li>
             <li class="footer__menu-item footer__menu-item--trainers">
-              <a href="#" aria-label="Тренеры">Тренеры</a>
+              <a href="#trainers" aria-label="Тренеры">Тренеры</a>
             </li>
             <li class="footer__menu-item footer__menu-item--schedule">
               <a href="#" aria-label="Расписание">Расписание</a>
