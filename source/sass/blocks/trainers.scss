@@ -41,23 +41,27 @@
 
 .trainers__item {
   background-color: $color-chambray;
-  height: 294px;
-  max-height: 294px;
+  // min-height: 294px;
+  // min-height: min-content;
+  // height: auto;
+  // max-height: 294px;
   overflow: auto;
-  width: auto;
+  // width: auto;
+  // min-height: 100%;
   margin: 0;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
 
   @include vp-1023 {
-    width: 268px;
+    // width: 268px;
+    // height: auto;
   }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
-    max-height: 274px;
+    // width: 226px;
+    // height: 274px;
+    // max-height: 274px;
   }
 }
 
@@ -68,27 +72,62 @@
   font-style: normal;
   z-index: 2;
   align-self: center;
-  margin-bottom: 23px;
+  bottom: 23px;
+
+  position: absolute;
 
   @include vp-1023 {
     font-size: 18px;
-    margin-left: 7px;
+    left: 31.4%;
+    bottom: 5px;
   }
 
   @include vp-767 {
-    font-size: 32px;
-    letter-spacing: 0.96px;
+    left: 15%;
+    // font-size: 32px;
+    // letter-spacing: 0.96px;
   }
 }
 
 .trainers__item img {
   background-color: $color-grey;
-  position: absolute;
-  top: 0;
+  // position: absolute;
+  // top: 0;
+  display: block;
   object-fit: cover;
   width: 100%;
   height: 100%;
+
+  @media (max-width: $vp-768) {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include  vp-767 {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include vp-320 {
+    width: 226px;
+    height: 274px;
+  }
 }
+
+// @include  vp-1023 {
+//   width: 268px;
+//   height: 294px;
+// }
+
+// @include  vp-1022 {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// @include vp-767 {
+//   min-width: 226px;
+//   min-height: 274px;
+// }
 
 .trainers__content-wrapper {
   position: relative;

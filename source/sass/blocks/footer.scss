@@ -21,10 +21,10 @@
 
 .footer__menu-item.footer__menu-item--logo {
   margin-right: auto;
-  margin-top: 0;
+  margin-top: -2px;
 
   @include vp-1023 {
-    margin-top: -9px;
+    margin-top: -12px;
   }
 
   @include vp-767 {

@@ -24,10 +24,6 @@
     margin-right: 120px;
   }
 
-  // @include vp-1179 {
-  //   margin-right: 70px;
-  // }
-
   @include vp-1023 {
     margin: 0;
     padding: 61px 19.2% 69px;
@@ -126,7 +122,6 @@
   background-color: transparent;
   padding: 16px 0 17px;
   border: 3px solid $color-default-white;
-  // width: 413px;
 
   &:hover,
   &:active {
@@ -135,7 +130,6 @@
   }
 
   @include vp-1023 {
-    // min-width: 474px;
     width: 100%;
     padding-right: 30px;
   }
