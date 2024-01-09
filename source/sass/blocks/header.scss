@@ -4,7 +4,7 @@
 }
 
 .header__container {
-  padding: 30px 103px 0;
+  padding: 30px 103px 11px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18,19 +18,36 @@
   }
 }
 
-.header__logo {
-  @include font($ff-alumni-sans, 600, 36px, $color-default-white, normal);
-  letter-spacing: 0.72px;
+// .header__logo {
+//   @include font($ff-alumni-sans, 600, 36px, $color-default-white, normal);
+//   letter-spacing: 0.72px;
+
+//   @include vp-1023 {
+//     font-size: 24px;
+//     font-weight: 700;
+//     letter-spacing: 0.48px;
+//   }
+
+//   @include vp-767 {
+//     font-size: 20px;
+//     letter-spacing: 0.4px;
+//   }
+// }
+
+.header__logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
 
   @include vp-1023 {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0.48px;
+    margin-top: 7px;
   }
 
   @include vp-767 {
-    font-size: 20px;
-    letter-spacing: 0.4px;
+    margin-top: 5px;
   }
 }
 

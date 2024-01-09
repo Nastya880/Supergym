@@ -5,6 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   width: 68.4%;
+  // margin-top: -10px;
+  align-items: center;
+  // justify-self: center;
 
   @include vp-1023 {
     width: 533px;
@@ -22,7 +25,7 @@
 
 .footer__menu-item {
   margin-right: 40px;
-  margin-top: -2px;
+  margin-top: -12px;
 
   @include vp-1023 {
     margin-top: -6px;

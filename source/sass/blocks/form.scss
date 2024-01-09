@@ -20,13 +20,13 @@
   width: 100%;
 
   @include vp-1279 {
-    max-width: none;
-    margin-right: 100px;
+    max-width: 400px;
+    margin-right: 120px;
   }
 
-  @include vp-1179 {
-    margin-right: 70px;
-  }
+  // @include vp-1179 {
+  //   margin-right: 70px;
+  // }
 
   @include vp-1023 {
     margin: 0;
