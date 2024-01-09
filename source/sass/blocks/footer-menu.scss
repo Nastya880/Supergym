@@ -54,10 +54,10 @@
 
 .footer__menu-item--tickets {
   @include vp-767 {
-    // margin-top: -1px;
     margin-bottom: 31px;
   }
 }
+
 .footer__menu-item--services,
 .footer__menu-item--trainers {
   @include vp-767 {

@@ -1,6 +1,9 @@
+.feedback {
+  position: relative;
+}
+
 .feedback__container {
   padding: 23px 403px 120px;
-  position: relative;
 
   @include vp-1279 {
     padding: 22px 29% 120px;
@@ -38,7 +41,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
+
 
 .feedback__item {
   width: 560px;
@@ -104,6 +109,16 @@
 .feedback__button {
   background-color: transparent;
   border: none;
+  position: absolute;
+  top: 51%;
+
+  @include vp-1023 {
+    top: 50.7%;
+  }
+
+  @include vp-767 {
+    top: 54.4%;
+  }
 }
 
 .feedback__button svg {
@@ -115,42 +130,26 @@
   }
 }
 
-.feedback__button--prev {
-  position: absolute;
-  top: 51.2%;
-  left: 340px;
-
-  @include vp-1279 {
-    left: 24%;
-  }
+.feedback__button--prev  {
+  left: 24.8%;
 
   @include vp-1023 {
-    top: 50.4%;
-    left: 37px;
+    left: 5%;
   }
 
   @include vp-767 {
-    top: 54.4%;
-    left: 7px;
+    left: 2.5%;
   }
 }
 
 .feedback__button--next {
-  position: absolute;
-  top: 51.2%;
-  right: 340px;
-
-  @include vp-1279 {
-    right: 24%;
-  }
+  right: 24.8%;
 
   @include vp-1023 {
-    top: 50.4%;
-    right: 37px;
+    right: 5%;
   }
 
   @include vp-767 {
-    top: 54.4%;
-    right: 7px;
+    right: 2.5%;
   }
 }

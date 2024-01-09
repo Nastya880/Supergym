@@ -42,15 +42,10 @@
   list-style: none;
 }
 
-
-
 .trainers__info-item {
   @include font($ff-roboto, 400, 14px, $color-default-white, 150%);
-  margin: 0;
+  margin: 0 10px 13px 31px;
   padding: 0;
-  margin-bottom: 13px;
-  margin-left: 31px;
-  margin-right: 10px;
   position: relative;
 
   @include vp-767 {

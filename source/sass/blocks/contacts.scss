@@ -17,6 +17,7 @@
     padding: 63px 13px 63px 15px;
   }
 }
+
 .contacts h2 {
   @include font($ff-alumni-sans, 600, 54px, $color-sapphire, normal);
   letter-spacing: 1.62px;
@@ -143,4 +144,3 @@
     display: none;
   }
 }
-
