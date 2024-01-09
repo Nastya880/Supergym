@@ -2729,6 +2729,9 @@ button,
   color: #102654;
   line-height: 152.344%;
   margin: 0 0 0 7px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 @media (max-width: 1023px) {
   .tickets__content-item h3 {
@@ -2750,6 +2753,7 @@ button,
   color: #495a7d;
   line-height: 150%;
   margin: 4px 0 11px 7px;
+  text-align: center;
 }
 @media (max-width: 1023px) {
   .tickets__content-item p:first-of-type {
@@ -4675,11 +4679,6 @@ button,
   padding: 57px 0 59px 120px;
   max-width: 616px;
 }
-@media (max-width: 1179px) {
-  .contacts__container {
-    padding-left: 5%;
-  }
-}
 @media (max-width: 1023px) {
   .contacts__container {
     margin: 0;
@@ -4882,6 +4881,7 @@ button,
 }
 @media (max-width: 1279px) {
   .form__container {
+    max-width: none;
     margin-right: 100px;
   }
 }
@@ -4893,7 +4893,7 @@ button,
 @media (max-width: 1023px) {
   .form__container {
     margin: 0;
-    padding: 61px 148px 69px 147px;
+    padding: 61px 19.2% 69px;
     max-width: none;
   }
 }
@@ -4943,6 +4943,11 @@ button,
      -moz-column-gap: 30px;
           column-gap: 30px;
   row-gap: 28px;
+}
+@media (max-width: 1279px) {
+  .form form {
+    width: 100%;
+  }
 }
 @media (max-width: 1023px) {
   .form form {
@@ -5047,7 +5052,6 @@ button,
   background-color: transparent;
   padding: 16px 0 17px;
   border: 3px solid #ffffff;
-  width: 413px;
 }
 
 @media (max-width: 767px){
@@ -5071,7 +5075,6 @@ button,
 }
 @media (max-width: 1023px) {
   .form button {
-    min-width: 474px;
     width: 100%;
     padding-right: 30px;
   }

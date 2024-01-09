@@ -69,6 +69,9 @@
 .tickets__content-item h3 {
   @include font($ff-roboto, 700, 26px, $color-sapphire, 152.344%);
   margin: 0 0 0 7px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: center;
 
   @include vp-1023 {
     margin-left: 0;
@@ -84,6 +87,7 @@
 .tickets__content-item p:first-of-type {
   @include font($ff-roboto, 400, 16px, $color-chambray, 150%);
   margin: 4px 0 11px 7px;
+  text-align: center;
 
   @include vp-1023 {
     margin-bottom: 12px;
