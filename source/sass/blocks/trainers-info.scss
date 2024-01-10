@@ -53,7 +53,7 @@
   }
 }
 
-.trainers__info-item:before {
+.trainers__info-item::before {
   content: "·";
   position: absolute;
   font-size: 50px;

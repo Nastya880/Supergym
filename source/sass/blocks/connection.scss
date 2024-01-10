@@ -1,4 +1,4 @@
-.connection__wrapper {
+.wrapper__connection {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -12,7 +12,7 @@
   }
 }
 
-.connection__wrapper::before {
+.wrapper__connection::before {
   position: absolute;
   content: "";
   right: 0;

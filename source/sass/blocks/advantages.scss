@@ -91,7 +91,6 @@
   display: flex;
   background: $violet-to-blue;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @include vp-1023 {

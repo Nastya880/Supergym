@@ -32,7 +32,7 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__intro">
-        <header>
+        <header class="header">
           <div class="header__container container">
             <a class="header__logo" href="#" aria-label="логотип SUPERGYM">
               <picture>
@@ -87,10 +87,8 @@
               <picture>
                 <source media="(max-width: 767px)" type="image/jpg" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
                 <source media="(max-width: 767px)" type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-
                 <source media="(max-width: 1023px)" type="image/jpg" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
                 <source media="(max-width: 1023px)" type="image/webp" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-
                 <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
                 <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="401" alt="фотография тренажерного зала">
               </picture>
@@ -100,9 +98,10 @@
                   <source type="image/webp" srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x">
                   <img src="img/gym-video.jpg" srcset="img/gym-video@2x.jpg 2x" width="364" height="228" alt="фотография тренажерного зала">
                 </picture>
-                <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=ShVnxVNWamK1bV-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=ShVnxVNWamK1bV-o"  width="364" height="228" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <button class="gym__video-button" type="button" data-video-play aria-label="Показать видео"></button>
               </div>
+            </div>
           </div>
         </section>
 
@@ -316,7 +315,7 @@
             </div>
             <picture>
               <source media="(max-width: 767px)" type="image/jpg" srcset="img/super-games-mobile.jpg 1x, img/super-games-mobile@2x.jpg 2x">
-              <source media="(max-width: 767px)" type="image/webp" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2">
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2x">
 
               <source type="image/webp" srcset="img/super-games.webp 1x, img/super-games@2x.webp 2x">
               <img src="img/super-games.jpg" srcset="img/super-games@2x.png 2x" width="660" height="500" alt="фотка мужчины в процессе супер-игры">
@@ -589,7 +588,7 @@
                 <li class="feedback__item swiper-slide">
                   <picture>
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/feedback-mobile.png 1x, img/feedback-mobile@2x.png 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" type="image/webp" srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/feedback.webp 1x, img/feedback@2x.webp 2x">
                     <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Анны Орловой">
                   </picture>
@@ -602,7 +601,7 @@
                     <img src="img/feedback.png" srcset="img/feedback@2x.png 2x" width="80" height="80" alt="фотография Кристины Ивановой">
                   </picture>
                   <h3>Кристина Иванова</h3>
-                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  <p>&laquo;Хожу в&nbsp;Supergym около года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo; За то время, что хожу - вижу результат</p>
                 </li>
               </ul>
             </div>
@@ -619,7 +618,7 @@
           </button>
         </section>
 
-        <div class="connection__wrapper">
+        <div class="wrapper__connection">
           <section class="form">
             <div class="form__container">
               <h2>Бесплатное занятие</h2>
@@ -628,7 +627,7 @@
                 <input type="text" name="name" id="name" placeholder="Имя" pattern="(^[a-zA-Z]+$)|(^[А-Яа-яЁё\s]+$)(^[-\s]+$)" required>
                 <label class="visually-hidden" for="phone">Введите Ваш Телефон</label>
                 <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                <button class="reservation__form-button" type="submit">отправить</button>
+                <button type="submit">отправить</button>
               </form>
             </div>
           </section>

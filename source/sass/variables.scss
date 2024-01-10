@@ -34,7 +34,7 @@ $color-cobalt:                      #0041ca;
 
 // Gradient
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$blue-to-red-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg,$color-dark-cerulean 32.24deg,$color-venetian-red 313.31deg,$color-dark-cerulean 392.24deg);
+$blue-to-red-conic:                 conic-gradient(from 150.87deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
 $blue-to-red-linear:                linear-gradient(143deg, $color-crimson 0%, $color-cobalt 87.33%);
 $violet-to-blue:                    linear-gradient(128deg, $color-crimson 0%, $color-cobalt 45.58%);
 $red-to-blue:                       var(--1, linear-gradient(97deg, $color-torch-red 17.6%, $color-cobalt 95.31%));
