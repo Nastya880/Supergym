@@ -3,6 +3,7 @@ import Swiper from '../vendor/swiper';
 const initSwiperFeedback = () => {
   const swiper = new Swiper('[data-swiper="feedback"]', {
     spaceBetween: 20,
+    autoHeight: true,
 
     navigation: {
       nextEl: '[data-swiper-feedback-button="next"]',
