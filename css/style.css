@@ -3939,6 +3939,9 @@ button,
   -webkit-column-gap: 28px;
      -moz-column-gap: 28px;
           column-gap: 28px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 @media (max-width: 1023px) {
   .feedback__item {
