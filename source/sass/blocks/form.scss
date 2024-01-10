@@ -24,6 +24,11 @@
     margin-right: 120px;
   }
 
+  @include vp-1179 {
+    // max-width: 380px;
+    margin-right: 100px;
+  }
+
   @include vp-1023 {
     margin: 0;
     padding: 61px 19.2% 69px;
