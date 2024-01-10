@@ -1,0 +1,26 @@
+.wrapper__connection {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(337px, 1fr);
+  background: $sapphire-and-white;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background: none;
+  }
+}
+
+.wrapper__connection::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 50%;
+  height: 1px;
+  background-color: $color-light-slate-grey;
+
+  @include vp-1023 {
+    display: none;
+  }
+}

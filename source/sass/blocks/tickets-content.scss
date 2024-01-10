@@ -1,0 +1,184 @@
+.tickets__content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.tickets__content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  align-items: center;
+  gap: 40px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(2, 360px);
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    gap: 34px;
+  }
+}
+
+.tickets__content-item {
+  margin: 0;
+  padding: 54px 0 55px;
+  border: 7px solid $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  max-width: 360px;
+  min-height: 448px;
+  height: 100%;
+  hyphens: auto;
+  cursor: pointer;
+
+  &:hover {
+    // cursor: pointer;
+    border-image: $blue-to-red-linear;
+    border-image-slice: 1;
+  }
+
+  @include vp-1023 {
+    max-width: 442px;
+    width: 442px;
+    min-height: 448px;
+    padding: 50px 0 55px;
+  }
+
+  @include vp-767 {
+    margin-top: 1px;
+    max-width: 290px;
+    min-height: 384px;
+    padding: 45px 0 0;
+  }
+}
+
+.tickets__content-item h3 {
+  @include font($ff-roboto, 700, 26px, $color-sapphire, 152.34%);
+  margin: 0 0 0 7px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: center;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-bottom: 1px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+}
+
+.tickets__content-item p:first-of-type {
+  @include font($ff-roboto, 400, 16px, $color-chambray, 150%);
+  margin: 4px 0 11px 7px;
+  text-align: center;
+
+  @include vp-1023 {
+    margin-bottom: 12px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    margin: 8px 8px 10px;
+  }
+}
+
+.tickets__content-price {
+  position: relative;
+  margin-bottom: 33px;
+  max-width: 100%;
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
+}
+
+.tickets__content-price svg {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tickets__content-price p:first-of-type {
+  @include font($ff-roboto, 700, 100px, $color-whisper, 150%);
+  margin: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include vp-767 {
+    font-size: 80px;
+  }
+}
+
+
+.tickets__content-price p:last-of-type {
+  @include font($ff-roboto, 700, 60px, $color-egyptian-blue, 150%);
+  padding: 0;
+  position: absolute;
+  top: -5px;
+  left: 10.2%;
+  max-width: 89.8%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include vp-1023 {
+    left: 18px;
+    top: -6px;
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    top: -3px;
+    left: 16px;
+  }
+}
+
+.tickets__element-button {
+  display: inline-block;
+  color: $color-sapphire;
+  margin-left: 5px;
+  margin-top: -4px;
+  padding: 26px 45px 24px 44px;
+  outline: 2px solid $color-sapphire;
+  outline-offset: -1px;
+
+  &:hover {
+    background: $red-to-blue;
+    outline: none;
+    color: $color-default-white;
+  }
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-top: -5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    outline-offset: -1px;
+  }
+
+  @include vp-767 {
+    margin-top: -2px;
+    width: 206px;
+    outline-offset: -1px;
+  }
+}

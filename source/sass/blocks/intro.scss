@@ -1,0 +1,147 @@
+.intro__container {
+  padding: 0 2% 51px 9%;
+  display: grid;
+  grid-template-columns: minmax(377px, min-content) auto;
+  gap: 63px;
+
+  @include vp-1279 {
+    padding: 19px 5.9% 82px;
+    gap: 30px;
+    grid-template-columns: minmax(323px, min-content) auto;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    gap: 0;
+    padding: 18px 6% 79px 4%;
+  }
+}
+
+.intro__description {
+  display: grid;
+  grid-template-areas: "list-gym intro" "list-gym button";
+  column-gap: 18px;
+  margin-top: 88px;
+
+  @include vp-1023 {
+    margin-top: 49px;
+    column-gap: 25px;
+  }
+
+  @include vp-767 {
+    grid-template-areas: "list-gym intro" "button button";
+    gap: 0;
+  }
+}
+
+.intro__list {
+  grid-area: list-gym;
+  list-style: none;
+  margin-bottom: 85px;
+  padding: 0;
+  align-self: center;
+  margin-top: 92px;
+
+  @include vp-1023 {
+    margin-top: 80px;
+  }
+
+  @include vp-767 {
+    margin-top: 93px;
+    margin-right: -6px;
+    margin-bottom: 0;
+  }
+}
+
+.intro__item {
+  @include font($ff-roboto, 400, 14px, $color-default-white, 150%);
+  text-align: right;
+}
+
+.intro__description-wrapper {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 10;
+  max-width: 398px;
+  min-width: min-content;
+
+  @include vp-767 {
+    max-width: 353px;
+  }
+}
+
+.intro__description-wrapper p {
+  @include font($ff-alumni-sans, 600, 48px, $color-default-white, normal);
+  margin: 0 51px 15px 0;
+  letter-spacing: 1.44px;
+
+  @include vp-1023 {
+    font-size: 34px;
+    letter-spacing: 1.02px;
+    margin-right: 4px;
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    margin-right: 3px;
+    margin-bottom: 15.8px;
+  }
+}
+
+.intro__description-wrapper h1 {
+  @include font($ff-alumni-sans, 600, 92px, $color-default-white, normal);
+  text-align: right;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include vp-1023 {
+    font-size: 72px;
+    letter-spacing: 3.6px;
+    text-transform: none;
+  }
+}
+
+.intro__button {
+  grid-area: button;
+  align-self: start;
+  justify-self: end;
+  width: 95%;
+  margin-top: 5px;
+  padding: 19px 0 20px;
+  border: 4px solid $color-default-white;
+  z-index: 10;
+
+  @include vp-1023 {
+    width: 100%;
+    margin-top: 12px;
+    margin-right: -1px;
+    padding: 20px 25px 19px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-top: 21px;
+    margin-right: 0;
+    padding: 21px 18px 20px;
+  }
+}
+
+.intro img {
+  background-color: $color-persian-blue;
+  margin-top: -22px;
+  min-width: 64.5%;
+
+  @include vp-1023 {
+    margin-top: 0;
+    width: 324px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

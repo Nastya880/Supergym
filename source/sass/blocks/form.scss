@@ -1,0 +1,138 @@
+.form {
+  justify-self: end;
+
+  @include vp-1023 {
+    justify-self: center;
+    width: 100%;
+    background-color: $color-sapphire;
+  }
+
+  @include vp-767 {
+    justify-self: start;
+  }
+}
+
+.form__container {
+  padding-top: 56px;
+  padding-bottom: 68px;
+  margin-right: 171px;
+  max-width: 410px;
+  width: 100%;
+
+  @include vp-1279 {
+    max-width: 400px;
+    margin-right: 120px;
+  }
+
+  @include vp-1023 {
+    margin: 0;
+    padding: 61px 19.2% 69px;
+    max-width: none;
+  }
+
+  @include vp-767 {
+    padding: 63px 13px 69px 15px;
+  }
+}
+
+.form h2 {
+  @include font($ff-alumni-sans, 800, 54px, $color-default-white, 156%);
+  margin: 0 0 20px;
+  letter-spacing: 2.4px;
+
+  @include vp-1023 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.56px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    margin-bottom: 37px;
+  }
+}
+
+.form form {
+  margin: 0;
+  padding: 0;
+  width: 410px;
+  display: grid;
+  grid-template-areas: "name-form phone-form" "btn btn";
+  column-gap: 30px;
+  row-gap: 28px;
+
+  @include vp-1279 {
+    width: 100%;
+  }
+
+  @include vp-1023 {
+    min-width: 472px;
+    width: 100%;
+    column-gap: 59px;
+  }
+
+  @include vp-767 {
+    column-gap: 0;
+    row-gap: 35px;
+    min-width: 100%;
+    grid-template-areas: "name-form" "phone-form" "btn";
+    margin-left: -1px;
+  }
+}
+
+.form input[type="text"] {
+  grid-area: name-form;
+}
+
+.form input[type="tel"] {
+  grid-area: phone-form;
+}
+
+.form input {
+  background-color: transparent;
+  border: none;
+  color: $color-default-white;
+  display: block;
+  width: 100%;
+  padding-bottom: 5.5px;
+  border-bottom: 1px solid $color-light-slate-grey;
+
+  @include vp-767 {
+    padding-bottom: 5px;
+  }
+}
+
+.form input::placeholder {
+  @include font($ff-roboto, 400, 14px, $color-default-white, normal);
+}
+
+.form button {
+  @include font($ff-roboto, 700, 14px, $color-default-white, normal);
+  grid-area: btn;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 16px 0 17px;
+  border: 3px solid $color-default-white;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background: $red-to-blue;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+    padding-right: 0;
+    margin-top: 3px;
+  }
+}

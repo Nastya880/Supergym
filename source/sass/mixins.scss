@@ -1,3 +1,11 @@
+@mixin font($family, $weight, $size, $color, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $family;
+  color: $color;
+  line-height: $line-height;
+}
+
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
@@ -56,8 +64,26 @@
   }
 }
 
+@mixin vp-1179 {
+  @media (max-width: ($vp-1180 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1023 {
   @media (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-800 {
+  @media (max-width: ($vp-800 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-768 {
+  @media (max-width: $vp-768) {
     @content;
   }
 }
@@ -69,6 +95,12 @@
 }
 
 @mixin vp-374 {
+  @media (max-width: ($vp-375 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-320 {
   @media (max-width: ($vp-375 - 1px)) {
     @content;
   }

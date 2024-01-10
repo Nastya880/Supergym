@@ -1,0 +1,82 @@
+.promo__list {
+  list-style: none;
+  display: grid;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo__item-wrapper {
+  border: 7px solid  $color-crimson;
+  border-image: $blue-to-red-linear;
+  border-image-slice: 1;
+  padding: 21px 35px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+
+  @include vp-1023 {
+    min-height: 211px;
+    padding-top: 18px;
+  }
+
+  @include vp-767 {
+    min-height: 211px;
+    padding: 29px 35px 36px 36px;
+    text-align: center;
+  }
+}
+
+.promo__item h4 {
+  @include font($ff-roboto, 700, 26px, $color-resolution-blue, 150%);
+  margin: 0;
+  padding: 0;
+
+  @include vp-1023 {
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 4px;
+  }
+}
+
+.promo__item p {
+  @include font($ff-roboto, 400, 16px, $color-resolution-blue, 140%);
+  margin: 0;
+  padding: 0;
+}
+
+.promo__item a {
+  @include font($ff-roboto, 700, 12px, $color-resolution-blue, normal);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $color-resolution-blue;
+  align-self: baseline;
+
+  &:hover {
+    color: $color-torch-red-bg;
+    border-color: $color-torch-red-bg;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 2px;
+  }
+
+  @include vp-767 {
+    align-self: center;
+  }
+}

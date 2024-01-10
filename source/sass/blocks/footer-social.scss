@@ -1,0 +1,42 @@
+.footer__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+
+  @include vp-1023 {
+    max-width: 100px;
+    margin-left: 43px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.footer__social-item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include vp-1023 {
+    margin-right: 20px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.footer__social-item svg {
+  fill: $color-default-white;
+
+  &:hover {
+    fill: $color-whisper;
+  }
+}

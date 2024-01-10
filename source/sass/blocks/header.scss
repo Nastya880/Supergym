@@ -1,0 +1,59 @@
+.wrapper__intro {
+  background: $blue-to-red-conic;
+  box-shadow: 0 4px 4px 0 rgba($color-default-black, 0.25);
+}
+
+.header__container {
+  padding: 30px 103px 11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    padding: 34px 45px 0;
+  }
+
+  @include vp-767 {
+    padding: 15.5px 15px 0;
+  }
+}
+
+.header__logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+
+  @include vp-1023 {
+    margin-top: 7px;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+  }
+}
+
+.header__phone {
+  @include font($ff-alumni-sans, 600, 26px, $color-default-white, normal);
+  letter-spacing: 0.78px;
+  z-index: 10;
+
+  &:hover,
+  &:active {
+    color: $color-spindle;
+  }
+
+  @include vp-1023 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+}

@@ -1,0 +1,62 @@
+.trainers__info {
+  background-color: rgba($color-sapphire, 0.89);
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.trainers__info h4 {
+  @include font($ff-roboto, 700, 18px, $color-default-white, 150%);
+  text-align: center;
+  display: block;
+  margin: 0;
+  margin-top: 51px;
+  padding: 0;
+
+  @include vp-1023 {
+    margin-left: -7px;
+  }
+
+  @include vp-767 {
+    margin-top: 41px;
+    margin-left: 0;
+  }
+}
+
+.trainers__info p {
+  @include font($ff-roboto, 400, 16px, $color-spindle, 150%);
+  text-align: center;
+  margin: -3px 0 33px;
+
+  @include vp-1023 {
+    margin-left: -7px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.trainers__info-list {
+  list-style: none;
+}
+
+.trainers__info-item {
+  @include font($ff-roboto, 400, 14px, $color-default-white, 150%);
+  margin: 0 10px 13px 31px;
+  padding: 0;
+  position: relative;
+
+  @include vp-767 {
+    margin-left: 10px;
+  }
+}
+
+.trainers__info-item::before {
+  content: "·";
+  position: absolute;
+  font-size: 50px;
+  left: -19px;
+  top: 1px;
+}

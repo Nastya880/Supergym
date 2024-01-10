@@ -1,0 +1,43 @@
+.footer {
+  background-color: $color-black-russian;
+}
+
+.footer__container {
+  padding: 44px 104px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 45px 45px 36px;
+  }
+
+  @include vp-767 {
+    padding: 46px 15px 44px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__menu-item.footer__menu-item--logo {
+  margin-right: auto;
+  margin-top: -2px;
+
+  @include vp-1023 {
+    margin-top: -12px;
+  }
+
+  @include vp-767 {
+    margin-top: 6px;
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.footer__menu-item.footer__menu-item--logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}

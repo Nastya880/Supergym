@@ -1,0 +1,12 @@
+.button {
+  @include font($ff-roboto, 700, 12px, $color-default-white, normal);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $red-to-blue;
+  }
+}
