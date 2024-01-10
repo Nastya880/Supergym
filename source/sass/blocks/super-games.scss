@@ -82,24 +82,24 @@
   @include vp-767 {
     margin-left: -1px;
   }
+}
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: -9px;
-    background-color: $color-default-white;
+.super-games__info-wrapper h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -9px;
+  background-color: $color-default-white;
 
-    @include vp-1023 {
-      bottom: 0;
-    }
+  @include vp-1023 {
+    bottom: 0;
+  }
 
-    @include vp-767 {
-      bottom: -1px;
-    }
+  @include vp-767 {
+    bottom: -1px;
   }
 }
 

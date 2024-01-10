@@ -46,7 +46,6 @@
   cursor: pointer;
 
   &:hover {
-    // cursor: pointer;
     border-image: $blue-to-red-linear;
     border-image-slice: 1;
   }
