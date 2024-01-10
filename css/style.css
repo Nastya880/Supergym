@@ -2621,6 +2621,7 @@ button,
     margin-left: -1px;
   }
 }
+
 .super-games__info-wrapper h3::after {
   content: "";
   display: block;
