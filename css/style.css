@@ -4132,9 +4132,13 @@ button,
 @media (max-width: 1023px) {
   .contacts__container {
     margin: 0;
-    padding: 61px 179px 63px 148px;
     max-width: none;
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contacts__container {
+    padding: 61px 179px 63px 148px;
   }
 }
 @media (max-width: 767px) {
@@ -4333,6 +4337,11 @@ button,
   .form__container {
     max-width: 400px;
     margin-right: 120px;
+  }
+}
+@media (max-width: 1179px) {
+  .form__container {
+    margin-right: 100px;
   }
 }
 @media (max-width: 1023px) {
