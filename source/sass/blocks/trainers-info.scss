@@ -42,7 +42,7 @@
   list-style: none;
 }
 
-.trainers__info-item {
+.trainers__info-list li {
   @include font($ff-roboto, 400, 14px, $color-default-white, 150%);
   margin: 0 10px 13px 31px;
   padding: 0;
@@ -53,7 +53,7 @@
   }
 }
 
-.trainers__info-item::before {
+.trainers__info-list li::before {
   content: "·";
   position: absolute;
   font-size: 50px;
