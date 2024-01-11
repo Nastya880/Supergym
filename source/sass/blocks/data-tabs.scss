@@ -41,9 +41,14 @@
 
 [data-tabs="element"].is-active {
   z-index: 1;
+  position: absolute;
 
   visibility: visible;
   opacity: 1;
+}
+
+[data-tabs="element"].tickets__element--no-js {
+  position: relative;
 }
 
 [data-accordion-init] {
