@@ -2464,8 +2464,13 @@ button,
 
 [data-tabs=element].is-active {
   z-index: 1;
+  position: absolute;
   visibility: visible;
   opacity: 1;
+}
+
+[data-tabs=element].tickets__element--no-js {
+  position: relative;
 }
 
 [data-accordion-init] > [data-tabs=content],
@@ -3038,7 +3043,7 @@ button,
   list-style: none;
 }
 
-.trainers__info-item {
+.trainers__info-list li {
   font-weight: 400;
   font-size: 14px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3049,12 +3054,12 @@ button,
   position: relative;
 }
 @media (max-width: 767px) {
-  .trainers__info-item {
+  .trainers__info-list li {
     margin-left: 10px;
   }
 }
 
-.trainers__info-item::before {
+.trainers__info-list li::before {
   content: "·";
   position: absolute;
   font-size: 50px;
