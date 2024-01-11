@@ -310,13 +310,9 @@ export class Tabs {
 
     const dataDelay = parentElement.dataset.delay ? parentElement.dataset.delay : 0;
     const dataHeight = parentElement.dataset.height;
-    const contentElement = parentElement.querySelector('[data-tabs="content"]');
-    const tabElements = this._returnScopeList(parentElement.querySelectorAll('[data-tabs="element"]'), parentElement);
 
     const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
     const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
-    const currentHeight = contentElement.offsetHeight;
-    const newHeight = tabElements[currentIndex].offsetHeight;
 
     parentElement.classList.add('no-action');
     document.activeElement.blur();
@@ -325,26 +321,47 @@ export class Tabs {
       activeControl.classList.remove('is-active');
     }
 
-    if (activeElement) {
-      activeElement.classList.remove('is-active');
-    }
+    if (parentElement.querySelector('[data-tabs="content"]')) {
+      const contentElement = parentElement.querySelector('[data-tabs="content"]');
+      const tabElements = this._returnScopeList(parentElement.querySelectorAll('[data-tabs="element"]'), parentElement);
+      const currentHeight = contentElement.offsetHeight;
+      const newHeight = tabElements[currentIndex].offsetHeight;
 
-    if (currentHeight > newHeight) {
-      setTimeout(() => {
+
+      if (activeElement) {
+        activeElement.classList.remove('is-active');
+      }
+
+      if (currentHeight > newHeight) {
+        setTimeout(() => {
+          if (dataHeight !== 'max' && dataHeight !== 'unset') {
+            contentElement.style.height = newHeight + 'px';
+          }
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
+      } else {
         if (dataHeight !== 'max' && dataHeight !== 'unset') {
           contentElement.style.height = newHeight + 'px';
         }
-        control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
-        parentElement.classList.remove('no-action');
-      }, dataDelay);
-    } else {
-      if (dataHeight !== 'max' && dataHeight !== 'unset') {
-        contentElement.style.height = newHeight + 'px';
+        setTimeout(() => {
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
       }
+    } else {
+      if (activeElement) {
+        activeElement.classList.remove('is-active');
+      }
+
       setTimeout(() => {
         control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
+        parentElement.classList.remove('no-action');
+      }, dataDelay);
+      setTimeout(() => {
+        control.classList.add('is-active');
         parentElement.classList.remove('no-action');
       }, dataDelay);
     }
