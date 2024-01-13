@@ -1478,7 +1478,7 @@ button,
 }
 
 .header__container {
-  padding: 31px 103px 11px;
+  padding: 30px 103px 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1771,7 +1771,7 @@ button,
 }
 
 .gym__container {
-  padding: 119px 103px 235px 162px;
+  padding: 121px 103px 235px 162px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 355px auto;
@@ -2032,7 +2032,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 121px 98px 120px 93px;
+  padding: 119px 98px 120px 93px;
 }
 @media (max-width: 1023px) {
   .tickets__container {
