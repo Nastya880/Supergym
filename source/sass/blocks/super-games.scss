@@ -1,7 +1,7 @@
 .super-games .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 122px 103px 52px;
+  padding: 123.5px 103px 52px;
 
   @include vp-1023 {
     padding: 99px 45px 50px;
@@ -38,7 +38,7 @@
 .super-games h2 {
   @include font($ff-alumni-sans, 600, 82px, $color-default-white, 96%);
   letter-spacing: 2.46px;
-  margin: 5px 0 0 14px;
+  margin: 5px 0 0 15px;
 
   @include vp-1023 {
     font-size: 48px;

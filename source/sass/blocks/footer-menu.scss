@@ -4,7 +4,8 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 124px;
+  margin-left: 123px;
+  // margin-top: -1px;
 
   @include vp-1023 {
     margin-left: 59px;

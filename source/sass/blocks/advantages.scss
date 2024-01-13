@@ -3,7 +3,7 @@
 }
 
 .advantages__container {
-  padding: 97px 162px 40px;
+  padding: 98px 162px 40px;
 
   @include vp-1023 {
     padding: 91px 45px 64px;
@@ -18,7 +18,7 @@
   @include font($ff-alumni-sans, 600, 54px, $color-sapphire, normal);
   letter-spacing: 1.62px;
   text-align: center;
-  margin: 0 0 45px;
+  margin: 0 0 44px;
 
   @include vp-1023 {
     font-size: 42px;
