@@ -1478,7 +1478,7 @@ button,
 }
 
 .header__container {
-  padding: 30px 103px 13px;
+  padding: 31px 103px 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2032,7 +2032,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 120px 98px 120px 93px;
+  padding: 121px 98px 120px 93px;
 }
 @media (max-width: 1023px) {
   .tickets__container {
@@ -2520,7 +2520,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
-  padding: 123.5px 103px 52px;
+  padding: 124px 103px 52px;
 }
 @media (max-width: 1023px) {
   .super-games .container {
@@ -2825,7 +2825,7 @@ button,
   }
 }
 .trainers__container {
-  padding: 54px 103px 140px;
+  padding: 53px 103px 140px;
 }
 @media (max-width: 1023px) {
   .trainers__container {
@@ -3625,7 +3625,7 @@ button,
   line-height: normal;
   letter-spacing: 1.62px;
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 34.5px;
 }
 @media (max-width: 1023px) {
   .promo h2 {
