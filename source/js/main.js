@@ -3,6 +3,7 @@ import {showVideo} from './modules/showVideo';
 import {initTabs} from './modules/tabs/initTabs';
 import {initSwiperTrainers} from './modules/initSwiperTrainers';
 import {initSwiperFeedback} from './modules/initSwiperFeedback';
+import {smoothScroll, introButton, sectionTickets} from './modules/initSmoothScroll';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwiperTrainers();
     initSwiperFeedback();
+    smoothScroll(introButton, sectionTickets);
   });
 });
 

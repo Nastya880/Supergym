@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 11px;
+  max-width: 15%;
 
   @include vp-1023 {
     max-width: 100px;

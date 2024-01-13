@@ -61,7 +61,7 @@
                 <p>омск</p>
                 <h1>Фитнес центр</h1>
               </div>
-              <a class="intro__button button" href="#tickets" aria-label="купить абонемент">купить абонемент</a>
+              <a class="intro__button button" href="#tickets" aria-label="купить абонемент" data-button="intro">купить абонемент</a>
             </div>
             <picture>
               <source media="(max-width: 1023px)" type="image/jpg" srcset="img/intro-trainer-tablet.jpg 1x, img/intro-trainer-tablet@2x.jpg 2x">
@@ -105,7 +105,7 @@
           </div>
         </section>
 
-        <section class="tickets" id="tickets">
+        <section class="tickets" id="tickets" data-tickets>
           <div class="tickets__container container tickets__container--without-js" data-tabs="parent">
             <h2>Абонементы</h2>
             <div class="tickets__controls-wrapper">
@@ -663,19 +663,20 @@
 
       <footer class="footer">
         <div class="footer__container container">
+          <div class="footer__logo">
+            <picture>
+              <source media="(max-width: 1023px)" type="image/png" srcset="img/logo-footer-tablet.png 1x, img/logo-footer-tablet@2x.png 2x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/logo-footer-tablet.webp 1x, img/logo-footer-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-footer.webp 1x, img/logo-footer@2x.webp 2x">
+              <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" width="88" height="32" alt="логотип SUPERGYM">
+            </picture>
+          </div>
           <ul class="footer__menu-list">
             <li class="footer__menu-item footer__menu-item--logo">
-              <a href="#" aria-label="логотип SUPERGYM">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/png" srcset="img/logo-footer-mobile.png 1x, img/logo-footer-mobile@2x.png 2x">
-                  <source media="(max-width: 767px)" type="image/webp" srcset="img/logo-footer-mobile.webp 1x, img/logo-footer-mobile@2x.webp 2x">
-
-                  <source media="(max-width: 1023px)" type="image/png" srcset="img/logo-footer-tablet.png 1x, img/logo-footer-tablet@2x.png 2x">
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="img/logo-footer-tablet.webp 1x, img/logo-footer-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/logo-footer.webp 1x, img/logo-footer@2x.webp 2x">
-                  <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" width="88" height="32" alt="логотип SUPERGYM">
-                </picture>
-              </a>
+              <picture>
+                <source type="image/webp" srcset="img/logo-footer-mobile.webp 1x, img/logo-footer-mobile@2x.webp 2x">
+                <img src="img/logo-footer-mobile.png" srcset="img/logo-footer-mobile@2x.png 2x" width="68" height="15" alt="логотип SUPERGYM">
+              </picture>
             </li>
             <li class="footer__menu-item footer__menu-item--services">
               <a href="#gym" aria-label="Услуги">Услуги</a>
@@ -693,7 +694,6 @@
               <a href="#" aria-label="Расписание">Расписание</a>
             </li>
           </ul>
-
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a class="footer__social-item-link footer__social-item-link--vk" href="#" aria-label="Вконтакте">

@@ -19,15 +19,17 @@
   gap: 40px;
 
   @include vp-1279 {
-    grid-template-columns: repeat(2, 360px);
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
   }
 
   @include vp-1023 {
+    margin-top: 1px;
     grid-template-columns: 1fr;
   }
 
   @include vp-767 {
     gap: 34px;
+    margin-top: 0;
   }
 }
 
@@ -156,8 +158,8 @@
   display: inline-block;
   color: $color-sapphire;
   margin-left: 5px;
-  margin-top: -4px;
-  padding: 26px 45px 24px 44px;
+  margin-top: -3px;
+  padding: 25px 45px 25px 44px;
   outline: 2px solid $color-sapphire;
   outline-offset: -1px;
 

@@ -64,6 +64,10 @@
   &::before {
     display: none;
   }
+
+  iframe {
+    display: block;
+  }
 }
 
 .gym__video-button {
