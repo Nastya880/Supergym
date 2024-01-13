@@ -137,7 +137,8 @@
   display: none;
 }
 
-.trainers__item:hover {
+.trainers__item:hover,
+.trainers__item:focus-within {
   flex-direction: column;
   padding: 0;
 

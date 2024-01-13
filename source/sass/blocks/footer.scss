@@ -3,10 +3,9 @@
 }
 
 .footer__container {
-  padding: 44px 104px 32px;
+  padding: 43px 104px 32px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   @include vp-1023 {
     padding: 45px 45px 36px;
@@ -19,25 +18,29 @@
   }
 }
 
-.footer__menu-item.footer__menu-item--logo {
-  margin-right: auto;
-  margin-top: -2px;
+.footer__logo {
+  width: auto;
+  height: auto;
+  margin-top: 8px;
 
   @include vp-1023 {
-    margin-top: -12px;
+    width: 82px;
+    height: 18px;
+    margin-top: 1.5px;
   }
 
   @include vp-767 {
-    margin-top: 6px;
-    margin-right: 0;
-    margin-bottom: 27px;
+    display: none;
   }
 }
 
-.footer__menu-item.footer__menu-item--logo img {
-  display: block;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
+.footer__menu-item.footer__menu-item--logo {
+  display: none;
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
+    display: block;
+    margin-top: 6px;
+  }
 }
