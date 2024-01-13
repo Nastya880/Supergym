@@ -4248,7 +4248,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   line-height: 150%;
-  margin: 0 0 3px 0;
+  margin: 0 0 4px 0;
 }
 @media (max-width: 1023px) {
   .contacts__list-wrapper h3 {
@@ -4271,6 +4271,7 @@ button,
   color: #102654;
   line-height: 152.34%;
   font-style: normal;
+  display: block;
   margin: 0;
   padding: 0;
 }
@@ -4287,7 +4288,7 @@ button,
 }
 
 .contacts__item-connect h3 {
-  margin-bottom: 1.5px;
+  margin-bottom: 4px;
 }
 @media (max-width: 1023px) {
   .contacts__item-connect h3 {
