@@ -19,7 +19,7 @@
   grid-template-rows: repeat(3, min-content);
   column-gap: 52px;
   padding: 80px 76px 85px 76px;
-  background-color: $color-torch-red;
+  background-color: $color-torch-red-bg;
 
   @include vp-1023 {
     grid-template-columns: 117px 56px;
