@@ -2122,8 +2122,9 @@ button,
 }
 @media (max-width: 1279px) {
   .tickets__content-list {
-    -ms-grid-columns: (minmax(280px, 1fr))[3];
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr))[3];
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 30px;
   }
 }
 @media (max-width: 1023px) {
@@ -2131,6 +2132,7 @@ button,
     margin-top: 1px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 @media (max-width: 767px) {
