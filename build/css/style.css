@@ -1981,6 +1981,9 @@ button,
 .gym__video.is-active button, .gym__video.is-active::before {
   display: none;
 }
+.gym__video.is-active iframe {
+  display: block;
+}
 
 .gym__video-button {
   width: 100px;
