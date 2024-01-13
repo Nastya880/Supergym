@@ -1539,6 +1539,8 @@ button,
 }
 @media (max-width: 767px) {
   .header__phone {
+    display: block;
+    margin-left: 10px;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
