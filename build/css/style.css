@@ -2117,8 +2117,8 @@ button,
 }
 @media (max-width: 1279px) {
   .tickets__content-list {
-    -ms-grid-columns: (360px)[2];
-    grid-template-columns: repeat(2, 360px);
+    -ms-grid-columns: (minmax(280px, 1fr))[3];
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
   }
 }
 @media (max-width: 1023px) {

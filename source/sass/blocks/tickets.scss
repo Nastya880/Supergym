@@ -18,19 +18,6 @@
   }
 }
 
-// .tickets__container--without-js {
-//   min-height: 851px;
-
-//   @include vp-1279 {
-//     min-height: 1779px;
-//   }
-
-//   @include vp-767 {
-//     min-height: 1487px;
-//   }
-// }
-
-
 .tickets h2 {
   @include font($ff-alumni-sans, 600, 54px, $color-sapphire, normal);
   text-align: center;
