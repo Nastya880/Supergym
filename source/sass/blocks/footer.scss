@@ -8,11 +8,11 @@
   justify-content: space-between;
 
   @include vp-1023 {
-    padding: 45px 45px 36px;
+    padding: 46px 45px 36px;
   }
 
   @include vp-767 {
-    padding: 46px 15px 44px;
+    padding: 47px 15px 44px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -38,8 +38,8 @@
   display: none;
 
   @include vp-767 {
-    width: 68px;
-    height: 15px;
+    min-width: 68px;
+    min-height: 15px;
     display: block;
     margin-top: 6px;
   }

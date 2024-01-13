@@ -8,12 +8,13 @@
 
   @include vp-1023 {
     margin: 0;
+    padding: 62px 0 59px 120px;
     max-width: none;
     width: 100%;
   }
 
   @include vp-768 {
-    padding: 61px 179px 63px 148px;
+    padding: 60px 179px 63px 148px;
   }
 
   @include vp-767 {

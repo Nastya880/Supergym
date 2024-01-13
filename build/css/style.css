@@ -2036,7 +2036,7 @@ button,
 }
 @media (max-width: 1023px) {
   .tickets__container {
-    padding: 100px 163px;
+    padding: 99px 160px;
   }
 }
 @media (max-width: 767px) {
@@ -2128,6 +2128,7 @@ button,
 }
 @media (max-width: 1023px) {
   .tickets__content-list {
+    margin-top: 1px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2135,6 +2136,7 @@ button,
 @media (max-width: 767px) {
   .tickets__content-list {
     gap: 34px;
+    margin-top: 0;
   }
 }
 
@@ -2520,7 +2522,7 @@ button,
 }
 @media (max-width: 1023px) {
   .super-games .container {
-    padding: 99px 45px 50px;
+    padding: 100px 45px 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2581,12 +2583,12 @@ button,
   .super-games h2 {
     font-size: 48px;
     letter-spacing: 1.44px;
-    margin-left: 7px;
+    margin-left: 6px;
   }
 }
 @media (max-width: 767px) {
   .super-games h2 {
-    margin-left: 8px;
+    margin-left: 9px;
   }
 }
 
@@ -2708,6 +2710,11 @@ button,
     font-size: 10px;
   }
 }
+@media (max-width: 767px) {
+  .super-games__button {
+    margin-top: -1px;
+  }
+}
 
 .super-games img {
   background-color: #102654;
@@ -2757,6 +2764,7 @@ button,
 @media (max-width: 767px) {
   .super-games__date-wrapper {
     margin-left: -2px;
+    margin-top: -14px;
   }
 }
 
@@ -2771,7 +2779,8 @@ button,
 }
 @media (max-width: 1023px) {
   .super-games__date-month-wrapper {
-    margin-left: -2px;
+    margin-left: -3px;
+    margin-top: 5px;
   }
 }
 
@@ -2798,6 +2807,12 @@ button,
     margin-top: -10px;
   }
 }
+@media (max-width: 767px) {
+  .super-games__time {
+    margin-top: -11px;
+    margin-bottom: 1px;
+  }
+}
 
 .super-games__time p {
   margin-top: -4px;
@@ -2807,7 +2822,6 @@ button,
     margin-top: -15px;
   }
 }
-
 .trainers__container {
   padding: 54px 103px 140px;
 }
@@ -2829,7 +2843,7 @@ button,
   color: #102654;
   line-height: normal;
   letter-spacing: 1.62px;
-  margin: 0 0 49px;
+  margin: 0 0 47px;
 }
 @media (max-width: 1023px) {
   .trainers h2 {
@@ -2903,11 +2917,15 @@ button,
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 262px;
-  height: 293px;
+  width: 100%;
+  height: 100%;
+  min-width: 260px;
+  min-height: 294px;
 }
 @media (max-width: 768px) {
   .trainers__item img {
+    min-width: auto;
+    min-height: auto;
     width: 268px;
     height: 294px;
   }
@@ -3101,7 +3119,7 @@ button,
   line-height: normal;
   letter-spacing: 1.62px;
   text-align: center;
-  margin: 0 0 44px;
+  margin: 0 0 45px;
 }
 @media (max-width: 1023px) {
   .advantages h2 {
@@ -3529,7 +3547,7 @@ button,
 }
 @media (max-width: 1023px) {
   .advantages__item-main-info--equipment p {
-    margin: 30px 5px 0;
+    margin: 30px 5px 2px;
   }
 }
 @media (max-width: 767px) {
@@ -3568,7 +3586,7 @@ button,
   color: #ffffff;
   line-height: 150%;
   text-align: center;
-  margin: 0 0 20px -30px;
+  margin: 0 0 0 -30px;
   width: 180px;
   padding: 0;
 }
@@ -3899,12 +3917,12 @@ button,
 }
 @media (max-width: 1023px) {
   .feedback__container {
-    padding: 16px 101px 98px;
+    padding: 16px 101px 99px;
   }
 }
 @media (max-width: 767px) {
   .feedback__container {
-    padding: 32px 47px 71px;
+    padding: 32px 47px 70px;
   }
 }
 
@@ -3922,14 +3940,14 @@ button,
   .feedback h2 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .feedback h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 }
 
@@ -4149,13 +4167,14 @@ button,
 @media (max-width: 1023px) {
   .contacts__container {
     margin: 0;
+    padding: 62px 0 59px 120px;
     max-width: none;
     width: 100%;
   }
 }
 @media (max-width: 768px) {
   .contacts__container {
-    padding: 61px 179px 63px 148px;
+    padding: 60px 179px 63px 148px;
   }
 }
 @media (max-width: 767px) {
@@ -4365,7 +4384,7 @@ button,
 @media (max-width: 1023px) {
   .form__container {
     margin: 0;
-    padding: 61px 19.2% 71px;
+    padding: 62px 19.2% 70px;
     max-width: none;
   }
 }
@@ -4572,12 +4591,12 @@ button,
 }
 @media (max-width: 1023px) {
   .footer__container {
-    padding: 45px 45px 36px;
+    padding: 46px 45px 36px;
   }
 }
 @media (max-width: 767px) {
   .footer__container {
-    padding: 46px 15px 44px;
+    padding: 47px 15px 44px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4611,8 +4630,8 @@ button,
 }
 @media (max-width: 767px) {
   .footer__menu-item.footer__menu-item--logo {
-    width: 68px;
-    height: 15px;
+    min-width: 68px;
+    min-height: 15px;
     display: block;
     margin-top: 6px;
   }
@@ -4631,6 +4650,7 @@ button,
 }
 @media (max-width: 1023px) {
   .footer__menu-list {
+    margin-top: -1px;
     margin-left: 59px;
   }
 }
